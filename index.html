@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Kyntra Bio, Inc. (Nasdaq: KYNB) | Investor Relations Concept</title>
+<meta name="description" content="An independent design concept for the Kyntra Bio (Nasdaq: KYNB) investor relations page. Not affiliated with Kyntra Bio, Inc.; the official IR site is https://investor.kyntrabio.com/.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&amp;family=Fira+Code:wght@300..700&amp;family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet">
+<style>
+/* mc:tokens */
+:root{
+  /* palette.mjs --brand "#3cdbc0,accent=#3cdbc0,accent-2=#e03c31,accent-3=#ffb81c,#ff7f32,deep=#3f4443,paper=#F5FDFC" --strategy full-palette  (full-palette)
+     accent   #3cdbc0 oklch(0.805 0.134 178.5)
+     accent-2 #e03c31 oklch(0.602 0.202 28.6)
+     accent-3 #ffb81c oklch(0.828 0.166 79.6)
+     accent-4 #3cdbc0 oklch(0.805 0.134 178.5)
+     accent-5 #ff7f32 oklch(0.732 0.177 47.6)
+     deep     #3f4443 oklch(0.382 0.007 182.7)
+     paper    #f5fdfc oklch(0.988 0.009 188.1)
+     measured: white on --accent-ink 6.80:1, --accent-ink on --paper 6.59:1, --text-mid on --tint 5.69:1 */
+  --H: 178.5; --Hn: 182.7;
+  --accent:        oklch(0.805 0.134 178.5); /* bright: fills on light stock; text only on dark where --check proves >= 4.5; real */
+  --accent-lo:     oklch(0.805 0.134 178.5 / 0.14);
+  --accent-lt:     oklch(0.86 0.107 178.5); /* bright accent ON dark surfaces */
+  --accent-ink:    oklch(0.46 0.084 178.5); /* TEXT, links, primary-button background */
+  --accent-ink-d:  oklch(0.40 0.073 178.5); /* hover */
+  --accent-2:      oklch(0.602 0.202 28.6); /* real */
+  --accent-2-lt:   oklch(0.86 0.075 28.6);
+  --accent-2-ink:  oklch(0.46 0.188 28.6);
+  --accent-3:      oklch(0.828 0.166 79.6); /* real */
+  --accent-3-lt:   oklch(0.86 0.132 79.6);
+  --accent-3-ink:  oklch(0.46 0.095 79.6);
+  --accent-4:      oklch(0.805 0.134 178.5); /* real */
+  --accent-4-lt:   oklch(0.86 0.107 178.5);
+  --accent-4-ink:  oklch(0.46 0.084 178.5);
+  --accent-5:      oklch(0.732 0.177 47.6); /* real */
+  --accent-5-lt:   oklch(0.86 0.082 47.6);
+  --accent-5-ink:  oklch(0.46 0.126 47.6);
+  --ink:           oklch(0.26 0.003 182.7); /* headings */
+  --deep:          oklch(0.382 0.007 182.7); /* permanently dark band; real */
+  --deep-2:        oklch(0.312 0.005 182.7); /* gravest band / footer */
+  --paper:         oklch(0.988 0.009 188.1); /* real paper */
+  --card:          oklch(0.998 0.002 188.1);
+  --tint:          oklch(0.965 0.020 178.5); /* .sec-tint band, concept note, card interiors */
+  --tint-2:        oklch(0.91 0.035 178.5); /* borders, ghost outlines, the darker of two light bands */
+  --text:          oklch(0.31 0.003 182.7);
+  --text-mid:      oklch(0.49 0.003 182.7);
+  --line:          oklch(0.30 0.010 182.7 / 0.13);
+  --line-d:        oklch(0.98 0.020 178.5 / 0.14);
+  /* surface-slot defaults (foundation surface block); retune in surface.css */
+  --sheet-edge:    oklch(0.40 0.073 178.5 / 0.26);
+  --blind:         oklch(1.00 0.000 0 / 0.5);
+  --blind-k:       oklch(1.00 0.000 0 / 0.85);
+  --sheet-neg:     oklch(0.98 0.020 178.5 / 0.05);
+  --serif:         'Brygada 1918', Georgia, serif;
+  --sans:          'Instrument Sans', system-ui, sans-serif;
+  --mono:          'Fira Code', ui-monospace, monospace;
+  --wrap: 1140px; --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* mc:substrate 9576b9be1505 */
+/* mediaconsole substrate: inlined by scripts/scaffold.mjs, identical on every page. Never edit or retype it;
+   override in page/layer.css or page/surface.css (both load after it). Band: all. Hue-parametric: colours are
+   tokens or oklch(... var(--Hn)). Integrity: opaque nav, content visible without JS, print and forced-colors safe. */
+:where(:root){--wrap:1140px;--ease:cubic-bezier(0.22, 1, 0.36, 1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;scroll-padding-top:88px}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);font-size:16px;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none} img,svg{display:block;max-width:100%} button{font:inherit;cursor:pointer}
+::selection{background:var(--accent-lt);color:var(--deep)}
+:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px;border-radius:2px}
+.sec-dark :focus-visible,.snapshot :focus-visible,footer :focus-visible{outline-color:var(--accent-lt)}
+.wrap{width:min(var(--wrap),100% - 44px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:200;background:var(--deep);color:#fff;padding:10px 16px;border-radius:6px;font-size:.85rem;transition:top .2s var(--ease)}
+.skip-link:focus{top:12px}
+.concept-note{background:var(--tint);color:var(--accent-ink-d);font-size:.78rem;text-align:center;padding:8px 16px;position:relative;z-index:101}
+.concept-note a{color:inherit;font-weight:600;text-decoration:underline}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+h1{font-size:clamp(2.35rem,5.3vw,4rem)} h2{font-size:clamp(1.7rem,3.4vw,2.5rem)} h3{font-size:clamp(1.15rem,2vw,1.4rem)}
+p{max-width:68ch}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);display:inline-flex;align-items:center;gap:9px;margin-bottom:16px}
+.eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.lead{font-size:clamp(1.08rem,1.7vw,1.3rem);line-height:1.55;color:var(--text-mid)}
+/* four house buttons: primary + ghost on light stock, primary-light + ghost-light on dark stock.
+   Text on dark uses --accent-lt, never --accent (D16: --accent may be a mid-L real brand colour; it is a fill). */
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:11px 22px;border-radius:8px;font-family:var(--sans);font-size:.82rem;font-weight:600;letter-spacing:.02em;border:1.5px solid transparent;background:transparent;transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),transform .2s var(--ease)}
+.btn:hover{transform:translateY(-1px)} .btn .arw{font-family:var(--mono);transition:transform .2s var(--ease)} .btn:hover .arw{transform:translateX(3px)}
+.btn-primary{background:var(--accent-ink);color:#fff} .btn-primary:hover{background:var(--accent-ink-d)}
+.btn-ghost{border-color:var(--tint-2);color:var(--accent-ink)} .btn-ghost:hover{background:var(--tint);border-color:var(--accent-ink)}
+.btn-primary-light{background:var(--accent-lt);color:var(--deep)} .btn-primary-light:hover{background:var(--tint)}
+.btn-ghost-light{border-color:oklch(0.98 0.01 var(--Hn)/.4);color:#fff} .btn-ghost-light:hover{background:oklch(0.98 0.01 var(--Hn)/.1)}
+/* nav: opaque by rule (no translucency, no blur); markup is emitted by scaffold.mjs from page.json */
+.site-nav{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease)}
+.site-nav.scrolled{box-shadow:0 6px 24px oklch(0.3 0.02 var(--Hn)/.07)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.nav-brand{display:flex;align-items:center;gap:12px;min-height:44px;min-width:0}
+.nav-logo{display:flex;align-items:center;flex:none}
+.nav-logo img{height:26px;width:auto}
+.nav-name{font-family:var(--serif);font-size:1.2rem;line-height:1.1;color:var(--ink)}
+.nav-tick{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--text-mid);border:1px solid var(--line);border-radius:5px;padding:4px 8px}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a:not(.btn){font-size:.86rem;font-weight:500;color:var(--text-mid);transition:color .2s var(--ease)}
+.nav-links a:not(.btn):hover{color:var(--accent-ink)}
+.nav-links a.active{color:var(--ink);text-decoration:underline;text-underline-offset:7px;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+.nav-burger{display:none;flex-direction:column;gap:5px;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:none}
+.nav-burger span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s var(--ease),opacity .2s}
+.nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* bands: FLAT FILLS, the floor only; page/surface.css must override them (verify FAILs flat pages) */
+main{display:block;overflow-x:clip}   /* a translated reveal or wide motif can never widen the page */
+main>section{padding:clamp(56px,8vw,104px) 0}
+.sec-white{background:var(--paper)} .sec-tint{background:var(--tint)}
+.sec-dark{background:var(--deep);color:oklch(0.9 0.008 var(--Hn))}
+.sec-dark h1,.sec-dark h2,.sec-dark h3{color:#fff} .sec-dark .eyebrow{color:var(--accent-lt)} .sec-dark .eyebrow::before{background:var(--accent)}
+.sec-dark .lead{color:oklch(0.86 0.01 var(--Hn))}
+.sec-head{max-width:660px;margin-bottom:clamp(36px,5vw,56px)} .sec-head p{margin-top:14px}
+/* data sits on its own plate: table.fin cells are transparent, never paint a band behind figures */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+table.fin{width:100%;border-collapse:collapse;min-width:540px;font-size:.92rem}
+table.fin caption{text-align:left;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--text-mid);padding:14px 20px;border-bottom:1px solid var(--line);background:var(--card)}
+table.fin th,table.fin td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--line)}
+table.fin tbody tr:last-child td{border-bottom:none}
+table.fin td.num{font-family:var(--mono);text-align:right;color:var(--ink);font-weight:500}
+table.fin thead th{font-weight:700;color:var(--ink);background:var(--card)}
+footer{background:var(--deep);color:oklch(0.76 0.008 var(--Hn));padding:56px 0 28px}
+.fls{padding:32px 0 0;font-size:.78rem;line-height:1.7;color:oklch(0.68 0.008 var(--Hn));max-width:98ch} .fls b{color:oklch(0.85 0.01 var(--Hn))}
+.fls a{color:inherit;text-decoration:underline} .fls+.fls{padding-top:14px}
+.market-note{padding-top:18px;margin-top:18px;border-top:1px solid var(--line-d);font-size:.72rem;line-height:1.7;color:oklch(0.68 0.008 var(--Hn))}
+/* reveal: hidden only once motion.js has set html.js, so no-JS and JS failure show everything.
+   Direction variants set --reveal-from (components/motion-extra.css); stagger with style="--d:.08s". */
+.reveal{transition:opacity .65s var(--ease),transform .65s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal:not(.in){opacity:0;transform:var(--reveal-from,translateY(20px))}
+/* motif pause: motion.js toggles .paused on #hero-motif off-screen, in a hidden tab, or via [data-motif-toggle] */
+.paused,.paused::before,.paused::after,.paused *,.paused *::before,.paused *::after{animation-play-state:paused!important}
+@media (max-width:900px){
+  .nav-burger{display:flex}
+  .nav-links{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:2px;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 22px 20px;opacity:0;transform:translateY(-10px);visibility:hidden;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;box-shadow:0 16px 30px oklch(0.3 0.02 var(--Hn)/.08)}
+  .nav-links.open{opacity:1;transform:none;visibility:visible;pointer-events:auto}
+  .nav-links li{width:100%} .nav-links a:not(.btn){display:block;padding:12px 0} .nav-links .btn{margin-top:10px;display:inline-flex}
+}
+@media (max-width:768px){ .footer-links a,.contact-col a{min-height:44px;display:flex;align-items:center} }   /* 44px tap targets; (0,1,1) so layer.css can restyle */
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{transition:none} .js .reveal:not(.in){opacity:1;transform:none}
+  .btn:hover{transform:none} [class*="motif"]{animation:none!important} [data-motif-toggle]{display:none}
+}
+/* print (D12): decoration off, every reveal shown, dark bands re-inked dark-on-white (backgrounds may not print).
+   A custom dark band must carry .sec-dark so this, its focus ring and its heading colour all apply. */
+@media print{
+  *,*::before,*::after{background-image:none!important;box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}
+  .site-nav{position:static} .nav-burger,.skip-link,[data-motif-toggle]{display:none!important}
+  .js .reveal:not(.in){opacity:1!important;transform:none!important}
+  .sec-dark,.sec-dark *,.hero,.hero *,.snapshot,.snapshot *,footer,footer *{background-color:transparent!important;color:#111!important;border-color:#bbb!important}
+  .sec-white,.sec-tint,.sec-dark,footer{background-color:#fff!important;border-top:1px solid #bbb}
+  .btn{background:transparent!important;color:#111!important;border-color:#111!important}
+  .table-scroll{overflow:visible;background:#fff!important}
+  main>section{padding:28px 0}
+}
+/* forced colors: the UA repaints every band to Canvas, so bands get a system seam instead */
+@media (forced-colors:active){
+  .sec-white,.sec-tint,.sec-dark,footer{background-image:none;border-top:1px solid CanvasText}
+  .btn{border-color:ButtonText}
+  .nav-burger span{forced-color-adjust:none;background:CanvasText}
+  .table-scroll{border-color:CanvasText}
+}
+/* mc:component timeline */
+/* timeline: E7 press and filings timeline grouped by year, newest first. Band: light (.sec-white / .sec-tint).
+   Integrity: every href is a URL you observed (no constructed detail pages; fall back to the news index or EDGAR);
+   headlines exactly as filed. Sticky year top:96px clears the 72px nav. */
+.news-year{display:grid;grid-template-columns:96px 1fr;gap:0 24px;align-items:start;border-top:1px solid var(--line);padding:22px 0 0;margin-top:22px}
+.news-year:first-child{border-top:none;padding:0;margin-top:0}
+.news-yr{position:sticky;top:96px;font-family:var(--mono);font-size:.9rem;font-weight:600;color:var(--text-mid)}
+.news-list{list-style:none;display:grid}
+.news-item{display:grid;grid-template-columns:118px 1fr auto;gap:4px 18px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.news-item:last-child{border-bottom:none}
+.news-item time{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mid)}
+.news-link{display:flex;align-items:center;gap:8px;min-height:44px;font-size:1rem;color:var(--ink);transition:color .2s var(--ease)}
+.news-link:hover{color:var(--accent-ink)}
+.news-link .arw{font-family:var(--mono);transition:transform .2s var(--ease)}
+.news-link:hover .arw{transform:translateX(3px)}
+.news-tag{justify-self:start;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-lo);padding:4px 8px;border-radius:4px}
+@media (max-width:640px){
+  .news-year{grid-template-columns:1fr;gap:12px}
+  .news-yr{position:static}
+  .news-item{grid-template-columns:1fr;gap:2px;padding:10px 0}
+}
+/* mc:component contact */
+/* contact: E9 IR contact grid. Band: either (light default, .sec-dark variant).
+   Integrity: headings are h3, never h4 (verify FAILs any h4); omit any unverified row (phone, transfer agent); the
+   EDGAR link is the edgar placeholder. The substrate gives .contact-col a its 44px min-height at <=768px. */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.contact-col h3{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.contact-col a,.contact-col p,.contact-col address{display:block;margin-top:12px;font-style:normal;font-size:.95rem;line-height:1.6;color:var(--text)}
+.contact-col a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--tint-2);transition:color .2s var(--ease)}
+.contact-col a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+.sec-dark .contact-col h3{color:var(--accent-lt)}
+.sec-dark .contact-col a,.sec-dark .contact-col p,.sec-dark .contact-col address{color:oklch(0.82 0.008 var(--Hn))}
+.sec-dark .contact-col a{text-decoration-color:var(--line-d)}
+.sec-dark .contact-col a:hover{color:#fff;text-decoration-color:var(--accent)}
+/* mc:layer */
+/* ============================================================================
+   Kyntra Bio visible layer: sidebar-rail, Brygada 1918 / Instrument Sans / Fira Code, full-palette.
+   Vocabulary: the logo's three pieces (red square, orange right triangle, amber square on a 2x2 grid
+   with one empty cell) are the tiles. A patient is a square tile; a fold is the triangle.
+   Colour roles (real, from the site): --accent teal (wholly-owned, text family), --accent-2 red
+   (in-licensed), --accent-3 amber, --accent-5 orange; charcoal --deep / --deep-2; light-teal paper.
+   ============================================================================ */
+:root{--rail:268px;--tile:var(--accent-2);--tile-a:var(--accent-3);--tile-o:var(--accent-5)}
+body{font-family:var(--sans);font-feature-settings:"tnum" 1,"lnum" 1}
+h1,h2,h3{font-family:var(--serif);font-weight:450;letter-spacing:-.016em;line-height:1.04}
+h1{font-size:clamp(2.6rem,4.7vw,4.7rem);font-weight:400;line-height:1;letter-spacing:-.022em}
+h1 em,h2 em{font-style:italic;font-weight:650;color:var(--accent-ink)}
+.sec-dark h1 em,.sec-dark h2 em,.sec-grave h2 em{color:var(--accent-lt)}
+h2{font-size:clamp(2.05rem,3.9vw,3.2rem)}
+h3{font-size:clamp(1.2rem,1.8vw,1.45rem);font-weight:580}
+p{max-width:66ch}
+.eyebrow{letter-spacing:.14em}
+.eyebrow::before{border-radius:0;width:8px;height:8px;background:var(--accent-2)}  /* the mark's square, not a dot */
+.sec-dark .eyebrow::before,.sec-grave .eyebrow::before{background:var(--accent-3)}
+.sec-grave .eyebrow{color:var(--accent)}
+.mono{font-family:var(--mono)}
+.num-mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ---- section folio: a tile numbered by CSS counters (decorative, empty alt text) ---- */
+main{counter-reset:sec}
+main>section{counter-increment:sec}
+.sec-head{max-width:720px;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head::before{content:counter(sec,decimal-leading-zero) / "";display:grid;place-items:center;width:42px;height:42px;margin-bottom:20px;background:var(--accent-3);color:var(--ink);font-family:var(--mono);font-size:.74rem;font-weight:600;letter-spacing:.04em;clip-path:polygon(0 0,100% 0,100% 100%,22% 100%,0 78%)}
+.sec-dark .sec-head::before,.sec-grave .sec-head::before{background:var(--accent-3);color:var(--deep-2)}
+.sec-head h2{margin-bottom:0}
+/* the mark as a seam: three pieces, red | orange | amber, cut on the diagonal, closing every section head */
+.sec-head::after{content:"";display:block;width:96px;height:7px;margin-top:26px;background:linear-gradient(90deg,var(--accent-2) 0 32px,var(--accent-5) 32px 64px,var(--accent-3) 64px 96px);clip-path:polygon(0 0,100% 0,calc(100% - 7px) 100%,0 100%)}
+.sec-head p{color:var(--text-mid)}
+.sec-dark .sec-head p,.sec-grave .sec-head p{color:oklch(0.86 0.006 var(--Hn))}
+
+/* ============================ THE RAIL (header restyled) ============================ */
+/* Dark header in every viewport: white wordmark on --deep-2. Below 1100px it is the substrate top bar. */
+.site-nav{background:var(--deep-2);border-bottom:1px solid var(--line-d);color:#fff}
+.site-nav.scrolled{box-shadow:0 6px 24px oklch(0.2 0.01 var(--Hn)/.25)}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-logo img{height:34px;width:auto}
+.nav-tick{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.9 0.01 var(--Hn));border:1px solid var(--line-d);padding:4px 9px;border-radius:2px;white-space:nowrap}
+.nav-links a:not(.btn){color:oklch(0.88 0.008 var(--Hn))}
+.nav-links a:not(.btn):hover{color:#fff}
+.nav-links a.active{color:#fff;text-decoration:none}
+.nav-burger span{background:#fff}
+.site-nav :focus-visible{outline-color:var(--accent-lt)}
+.site-nav .btn-primary{background:var(--accent);color:var(--deep-2)} /* teal fill on charcoal: 8.9:1 */
+.site-nav .btn-primary:hover{background:var(--accent-lt)}
+
+/* hamburger up to 999px (substrate default is 900px): the rail takes over at 1000px */
+@media (max-width:999px){
+  .nav-burger{display:flex}
+  .nav-links{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:2px;background:var(--deep-2);border-bottom:1px solid var(--line-d);padding:12px 22px 20px;opacity:0;transform:translateY(-10px);visibility:hidden;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;box-shadow:0 16px 30px oklch(0.2 0.01 var(--Hn)/.3)}
+  .nav-links.open{opacity:1;transform:none;visibility:visible;pointer-events:auto}
+  .nav-links li{width:100%}
+  .nav-links a:not(.btn){display:block;padding:12px 0}
+  .nav-links .btn{margin-top:10px;display:inline-flex}
+}
+@media (min-width:1000px){
+  body{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);grid-template-areas:"note note" "rail main" "foot foot"}
+  .concept-note{grid-area:note}
+  .site-nav{grid-area:rail;position:sticky;top:0;align-self:start;height:100vh;border-bottom:none;border-right:1px solid var(--line-d);overflow:hidden}
+  main{grid-area:main;min-width:0}
+  footer{grid-area:foot}
+  .site-nav .nav-inner{width:100%;height:100%;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:34px;padding:34px 24px 62px}
+  .nav-brand{flex-direction:column;align-items:flex-start;gap:14px}
+  .nav-logo img{height:38px}
+  .site-nav nav{flex:1;display:flex;flex-direction:column;min-height:0}
+  .nav-links{flex:1;flex-direction:column;align-items:stretch;gap:0;counter-reset:rail 2}
+  .nav-links li{counter-increment:rail;display:block}
+  .nav-links li:last-child{margin-top:auto}
+  .nav-links a:not(.btn){display:flex;align-items:center;gap:12px;min-height:44px;padding:6px 0;font-size:.92rem;font-weight:500;border-bottom:1px solid var(--line-d)}
+  .nav-links a:not(.btn)::before{content:counter(rail,decimal-leading-zero) / "";font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:oklch(0.74 0.012 var(--Hn));width:20px;flex:none}
+  .nav-links a.active::before{color:var(--accent-3)}
+  .nav-links a.active::after{content:"";width:9px;height:9px;margin-left:auto;background:var(--accent-3);flex:none;clip-path:polygon(0 0,100% 0,100% 100%)}
+  .nav-links .btn{width:100%;justify-content:center}
+  .site-nav::after{content:"";position:absolute;left:24px;bottom:18px;width:44px;height:44px;opacity:.9;pointer-events:none;
+    background:linear-gradient(var(--accent-2),var(--accent-2)) 0 0/20px 20px no-repeat,linear-gradient(var(--accent-3),var(--accent-3)) 22px 22px/20px 20px no-repeat,linear-gradient(to bottom right,transparent 49%,var(--accent-5) 50%) 0 22px/20px 20px no-repeat} /* the mark, decorative, under the CTA */
+  html{scroll-padding-top:24px}
+  .news-yr{top:24px}
+}
+@media (min-width:1000px) and (max-height:700px){.nav-links a:not(.btn){min-height:38px;font-size:.86rem}.site-nav .nav-inner{gap:20px;padding-top:24px}}
+
+/* ============================ HERO ============================ */
+.hero{padding:clamp(40px,6vw,76px) 0 clamp(48px,6vw,84px);min-height:min(820px,calc(100vh - 34px))}
+.hero-wrap{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero-copy .eyebrow{margin-bottom:22px}
+.hero h1{margin-bottom:22px}
+.hero .lead{max-width:56ch;color:var(--text);font-size:clamp(1.05rem,1.45vw,1.2rem)}
+.hero .lead strong{font-weight:600;color:var(--ink)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:640px;width:100%;justify-self:end}
+.hero-art svg{width:100%;height:100%;max-width:none}
+.motif-cell{transform-box:fill-box;transform-origin:center}
+.motif-pulse .motif-cell{animation:cellpulse 7.5s var(--ease) infinite}
+.paused .motif-cell,.paused.motif-pulse .motif-cell{animation-play-state:paused}
+@keyframes cellpulse{0%,70%,100%{opacity:1}78%{opacity:.35}88%{opacity:1}}
+.motif-fold{transform-box:fill-box;transform-origin:100% 0;animation:fold 9s var(--ease) infinite}
+.paused .motif-fold{animation-play-state:paused}
+@keyframes fold{0%,64%,100%{transform:none}74%{transform:rotate(-7deg)}88%{transform:none}}
+
+/* the listing notice sits in the hero: amber frame (full border), a tile flag, plain filed words */
+.notice{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;margin-top:30px;padding:16px 18px 16px 16px;background:var(--card);border:1.5px solid var(--accent-3);border-radius:4px;max-width:60ch}
+.notice-flag{width:30px;height:30px;position:relative;flex:none;margin-top:2px}
+.notice-flag i{position:absolute;display:block}
+.notice-flag i:nth-child(1){left:0;top:0;width:15px;height:15px;background:var(--accent-2)}
+.notice-flag i:nth-child(2){left:0;top:15px;width:15px;height:15px;background:var(--accent-5);clip-path:polygon(100% 0,100% 100%,0 0)}
+.notice-flag i:nth-child(3){left:15px;top:15px;width:15px;height:15px;background:var(--accent-3)}
+.notice h2{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-3-ink);margin-bottom:6px;line-height:1.3}
+.notice p{font-size:.92rem;line-height:1.55;color:var(--text);max-width:none}
+a.inl{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.sec-dark a.inl,.sec-grave a.inl{color:var(--accent-lt)}
+
+/* ---- source chips and data tags (house) ---- */
+.src-l{display:inline-block;vertical-align:baseline;margin:0 2px;padding:2px 8px;font-family:var(--mono);font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent-ink);background:var(--card);border:1px solid var(--tint-2);border-radius:3px;white-space:nowrap;transition:background .2s var(--ease),border-color .2s var(--ease)}
+.src-l:hover{background:var(--tint);border-color:var(--accent-ink)}
+.sec-dark .src-l,.sec-grave .src-l{color:var(--accent-lt);background:oklch(0.98 0.02 var(--H)/.05);border-color:var(--line-d)}
+.sec-dark .src-l:hover,.sec-grave .src-l:hover{background:oklch(0.98 0.02 var(--H)/.12);border-color:var(--accent-lt)}
+.tg{display:inline-block;margin-right:4px;padding:2px 8px;font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:3px;background:var(--accent-lo);color:var(--accent-ink)}
+.tg-co{background:oklch(0.828 0.166 79.6/.28);color:var(--accent-3-ink)}
+.sec-dark .tg-co,.sec-grave .tg-co{background:var(--accent-3);color:oklch(0.2 0.012 183)}
+.tg-cm{background:var(--deep-2);color:#fff}
+.tg-ac{background:oklch(0.602 0.202 28.6/.12);color:var(--accent-2-ink)}
+.note{font-size:.82rem;line-height:1.6;color:var(--text-mid);margin-top:14px;max-width:none}
+.sec-dark .note,.sec-grave .note{color:oklch(0.82 0.006 var(--Hn))}
+
+/* ============================ SNAPSHOT ============================ */
+.snap-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.snap{padding:clamp(20px,2.4vw,30px);display:flex;flex-direction:column;gap:12px;border-right:1px solid var(--line);position:relative}
+.snap:last-child{border-right:none}
+.snap::before{content:"";position:absolute;left:0;top:0;width:34px;height:5px;background:var(--accent)}
+.snap:nth-child(2)::before{background:var(--accent-2)}
+.snap:nth-child(3)::before{background:var(--accent-5)}
+.snap:nth-child(4)::before{background:var(--accent-3)}
+.snap-num{font-family:var(--serif);font-size:clamp(2.5rem,4.2vw,3.8rem);font-weight:400;line-height:1;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums}
+.snap-num small{font-family:var(--mono);font-size:.34em;font-weight:500;letter-spacing:.06em;color:var(--text-mid);margin:0 4px;vertical-align:.5em}
+.snap-label{font-size:.9rem;line-height:1.5;color:var(--text)}
+.snap-src{margin-top:auto;padding-top:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+
+/* ============================ STORY LEDGER ============================ */
+.ledger{list-style:none;display:grid;gap:0;border-top:1px solid var(--line)}
+.lg-row{display:grid;grid-template-columns:128px 22px minmax(0,1fr);gap:0 18px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.lg-d{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mid);padding-top:3px}
+.lg-m{width:14px;height:14px;margin-top:4px;background:var(--accent)}
+.lg-row.is-listing .lg-m{background:var(--accent-3)}
+.lg-row.is-finance .lg-m{background:var(--accent-5)}
+.lg-row.is-corp .lg-m{background:var(--accent-ink)}
+.lg-row.is-now .lg-m{clip-path:polygon(0 0,100% 0,100% 100%)}
+.lg-t h3{font-family:var(--sans);font-size:1rem;font-weight:650;letter-spacing:0;margin-bottom:4px;color:var(--ink)}
+.lg-t p{font-size:.94rem;line-height:1.6;max-width:70ch}
+.lg-t .src-l{margin-left:0;margin-right:6px;margin-top:8px}
+
+/* ============================ PIPELINE ============================ */
+.pipe{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(18px,2.6vw,32px)}
+.pipe-head,.pipe-row{display:grid;grid-template-columns:minmax(150px,.9fr) minmax(0,2fr);gap:clamp(14px,2vw,28px);align-items:center}
+.pipe-head{padding-bottom:12px;border-bottom:1px solid var(--line)}
+.pipe-scale{display:grid;grid-template-columns:repeat(4,1fr);font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mid)}
+.pipe-row{padding:30px 0;border-bottom:1px solid var(--line)}
+.pipe-row:last-of-type{border-bottom:none}
+.pipe-name h3{font-size:1.65rem;margin-bottom:4px}
+.pipe-name p{font-size:.84rem;color:var(--text-mid);line-height:1.45}
+.pipe-track{position:relative;height:60px;background:repeating-linear-gradient(to right,transparent 0,transparent calc(25% - 1px),var(--line) calc(25% - 1px),var(--line) 25%)}
+.pipe-bar{position:absolute;left:0;top:14px;height:36px;width:var(--end);background:var(--accent);clip-path:polygon(0 0,100% 0,calc(100% - 18px) 100%,0 100%)}
+.pipe-bar.lic{background:var(--accent-2)}
+.pipe-lab{position:absolute;top:-4px;left:var(--end);transform:translateX(-100%);font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mid);white-space:nowrap}
+.pipe-key{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;font-size:.84rem;color:var(--text-mid)}
+.pipe-key span{display:inline-flex;align-items:center;gap:8px}
+.pipe-key i{width:22px;height:12px;background:var(--accent);clip-path:polygon(0 0,100% 0,calc(100% - 5px) 100%,0 100%)}
+.pipe-key i.lic{background:var(--accent-2)}
+.cards2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(18px,2.4vw,28px)}
+.card h3{margin-bottom:10px}
+.card p{font-size:.94rem;line-height:1.6}
+.card ul{list-style:none;display:grid;gap:10px;margin-top:6px}
+.card li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:.94rem;line-height:1.55}
+.card li b{font-family:var(--serif);font-size:1.5rem;font-weight:420;line-height:1.1;color:var(--ink);min-width:3.2ch;font-variant-numeric:lining-nums tabular-nums}
+.kv{display:grid;gap:0}
+.kv>div{display:grid;grid-template-columns:minmax(120px,.7fr) minmax(0,1.4fr);gap:6px 18px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.kv>div:last-child{border-bottom:none}
+.kv dt{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-mid);padding-top:3px}
+.kv dd{color:var(--text)}
+.sec-dark .kv>div,.sec-grave .kv>div{border-bottom-color:var(--line-d)}
+.sec-dark .kv dt,.sec-grave .kv dt{color:oklch(0.78 0.008 var(--Hn))}
+.sec-dark .kv dd,.sec-grave .kv dd{color:oklch(0.95 0.006 var(--Hn))}
+
+/* ============================ FG-3246 (dark) ============================ */
+.mech{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:6px 0 10px}
+.mech figure{background:oklch(0.98 0.02 var(--H)/.04);border:1px solid var(--line-d);border-radius:4px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:12px}
+.mech svg{width:100%;height:auto;max-width:260px;margin:0 auto;aspect-ratio:200/150}
+.mech figcaption{font-size:.88rem;line-height:1.55;color:oklch(0.9 0.006 var(--Hn))}
+.mech figcaption b{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-3);margin-bottom:4px;font-weight:600}
+.units-plate{margin-top:34px;padding:clamp(18px,2.6vw,32px);background:oklch(0.98 0.02 var(--H)/.04);border:1px solid var(--line-d);border-radius:6px}
+.units-plate h3{color:#fff;margin-bottom:6px}
+.units-plate>p{font-size:.92rem;color:oklch(0.86 0.006 var(--Hn));max-width:72ch}
+.units{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,44px);margin:24px 0 8px}
+.arm .arm-h{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:oklch(0.92 0.008 var(--Hn));margin-bottom:12px;display:flex;justify-content:space-between;gap:10px}
+.arm .arm-h span{color:oklch(0.76 0.01 var(--Hn));font-weight:500}
+.arm-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(4px,.8vw,8px);max-width:290px}
+.arm-grid i{display:block;aspect-ratio:1;background:var(--c);transition:transform .25s var(--ease)}
+.arm-grid i.out{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c);opacity:.78}
+.arm.a1{--c:var(--accent-3)}.arm.a2{--c:var(--accent-5)}.arm.a3{--c:var(--accent-2)}
+.arm-grid i:nth-child(12){clip-path:none}
+.units-key{display:flex;flex-wrap:wrap;gap:22px;margin-top:20px;font-size:.84rem;color:oklch(0.88 0.006 var(--Hn))}
+.units-key span{display:inline-flex;align-items:center;gap:9px}
+.units-key i{width:13px;height:13px;background:var(--accent-3);display:inline-block}
+.units-key i.out{background:transparent;box-shadow:inset 0 0 0 1.5px var(--accent-3)}
+.cmp-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:34px}
+.sec-dark .card{background:oklch(0.98 0.02 var(--H)/.04);border-color:var(--line-d);color:oklch(0.92 0.006 var(--Hn))}
+.sec-dark .card h3{color:#fff}
+.sec-dark .card li b{color:#fff}
+
+/* ============================ ROXADUSTAT ============================ */
+.pairs{display:grid;gap:22px;margin:6px 0 6px}
+.pair h3{font-family:var(--sans);font-size:.98rem;font-weight:650;letter-spacing:0;margin-bottom:10px}
+.pair-row{display:grid;grid-template-columns:150px minmax(0,1fr) 120px;gap:14px;align-items:center;margin:7px 0;font-size:.88rem}
+.pair-row .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mid)}
+.pair-row .bar{height:22px;background:var(--tint-2);position:relative}
+.pair-row .bar i{position:absolute;left:0;top:0;bottom:0;width:var(--w);background:var(--accent);clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.pair-row.plc .bar i{background:var(--accent-5)}
+.pair-row .val{font-family:var(--mono);font-size:.78rem;color:var(--ink);font-weight:500}
+.caveat{margin-top:12px;padding:14px 16px;background:var(--card);border:1.5px solid var(--accent-3);border-radius:4px;font-size:.9rem;line-height:1.55;max-width:none}
+.caveat b{font-weight:650}
+
+/* ============================ FINANCIALS ============================ */
+table.fin td.num,table.fin th.num{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+table.fin thead th:not(:first-child){text-align:right}
+table.fin tr.tot th,table.fin tr.tot td{background:var(--tint);font-weight:700}
+table.fin td.dim{color:var(--text-mid)}
+table.fin th[scope=row]{font-weight:500;color:var(--text)}
+table.fin tr.tot th[scope=row]{font-weight:700;color:var(--ink)}
+.wf{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(18px,2.6vw,32px);margin-bottom:24px}
+.wf h3{margin-bottom:4px}
+.wf>p{font-size:.9rem;color:var(--text-mid)}
+.wf-rows{display:grid;margin-top:18px}
+.wf-row{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,1.6fr) 84px;gap:14px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.wf-row:last-child{border-bottom:none}
+.wf-row.sum{font-weight:650}
+.wf-row.sum .wf-l{color:var(--ink)}
+.wf-axis{position:relative;height:20px}
+.wf-axis::before{content:"";position:absolute;left:var(--zero);top:-9px;bottom:-9px;width:1px;background:var(--text-mid);opacity:.55}
+.wf-bar{position:absolute;top:2px;bottom:2px;background:var(--accent)}
+.wf-bar.neg{background:var(--accent-2);right:calc(100% - var(--zero));width:var(--w)}
+.wf-bar.pos{left:var(--zero);width:var(--w)}
+.wf-bar.neg{clip-path:polygon(0 0,100% 0,100% 100%,8px 100%)}
+.wf-bar.pos{clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.wf-row.sum .wf-bar.pos{background:var(--accent-ink)}
+.wf-row.sum .wf-bar.neg{background:var(--accent-2-ink)}
+.wf-v{font-family:var(--mono);font-size:.8rem;text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
+.wf-v.neg{color:var(--accent-2-ink)}
+.wf-key{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:.8rem;color:var(--text-mid)}
+.wf-key span{display:inline-flex;align-items:center;gap:8px}
+.wf-key i{width:12px;height:12px;display:inline-block;background:var(--accent-2)}
+.wf-key i.pos{background:var(--accent)}
+.liq{max-width:780px;margin:30px 0 0}
+.liq h3{margin-bottom:12px}
+.liq ul,ul.liq{list-style:none;display:grid;gap:12px;padding:0}
+.liq li{padding-left:22px;position:relative;font-size:.96rem;line-height:1.6}
+.liq li::before{content:"";position:absolute;left:0;top:.5em;width:9px;height:9px;background:var(--accent-2)}
+
+/* ============================ OBLIGATIONS (gravest band) ============================ */
+.exhibit{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:clamp(18px,3vw,44px);padding:clamp(22px,3vw,36px) 0;border-top:1px solid var(--line-d)}
+.exhibit:first-of-type{border-top:none;padding-top:0}
+.ex-id{display:flex;gap:14px;align-items:flex-start}
+.ex-k{flex:none;width:46px;height:46px;display:grid;place-items:center;background:var(--accent-3);color:var(--deep-2);font-family:var(--mono);font-weight:700;font-size:1.05rem;clip-path:polygon(0 0,100% 0,100% 100%,24% 100%,0 76%)}
+.ex-id h3{color:#fff;font-size:1.75rem;line-height:1.1}
+.ex-id p{font-size:.84rem;color:oklch(0.82 0.006 var(--Hn));margin-top:6px}
+.ex-body p{font-size:.96rem;line-height:1.65;color:oklch(0.93 0.006 var(--Hn))}
+.ex-body p+p{margin-top:12px}
+.ex-body blockquote{margin:18px 0;padding:20px 22px;border:1px solid var(--line-d);background:oklch(0.98 0.02 var(--H)/.05);font-family:var(--serif);font-size:1.28rem;font-weight:450;line-height:1.5;color:#fff;max-width:62ch}
+.ex-body blockquote cite{display:block;margin-top:8px;font-family:var(--mono);font-style:normal;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.8 0.01 var(--Hn))}
+.steps{list-style:none;display:grid;gap:0;margin:14px 0;border-top:1px solid var(--line-d)}
+.steps li{display:grid;grid-template-columns:116px minmax(0,1fr);gap:16px;padding:11px 0;border-bottom:1px solid var(--line-d);font-size:.92rem;line-height:1.55;color:oklch(0.93 0.006 var(--Hn))}
+.steps time{font-family:var(--mono);font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-3);padding-top:3px}
+.cmp{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
+.cmp th,.cmp td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line-d);vertical-align:top;color:oklch(0.93 0.006 var(--Hn))}
+.cmp thead th{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.8 0.01 var(--Hn));font-weight:600}
+.cmp tbody th{font-weight:600;color:#fff;width:28%}
+.cmp td.after{color:#fff;font-weight:600}
+.cmp-wrap{overflow-x:auto;border:1px solid var(--line-d);border-radius:4px;background:oklch(0.98 0.02 var(--H)/.03)}
+.cmp-wrap .cmp{margin:0;min-width:520px}
+.cmp caption{text-align:left;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.82 0.01 var(--Hn));padding:12px 12px 4px;caption-side:top}
+
+/* ============================ PEOPLE ============================ */
+.people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:28px}
+.person{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:6px}
+.mono-tile{position:relative;width:48px;height:48px;display:grid;place-items:center;background:var(--tint-2);font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--ink);letter-spacing:.04em}
+.mono-tile::after{content:"";position:absolute;right:0;top:0;width:13px;height:13px;background:var(--c,var(--accent-3));clip-path:polygon(0 0,100% 0,100% 100%)}
+.person h3{font-family:var(--sans);font-size:1rem;font-weight:650;letter-spacing:0;margin-bottom:2px}
+.person p{font-size:.84rem;line-height:1.5;color:var(--text-mid)}
+.person.left{opacity:.82}
+.person.left .tag-left{display:inline-block;margin-top:6px;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;background:oklch(0.828 0.166 79.6/.28);color:var(--accent-3-ink);border-radius:3px}
+.sub{font-family:var(--serif);font-size:1.3rem;font-weight:520;margin:34px 0 14px;color:var(--ink)}
+
+/* ============================ RESPONSIVE (stage width = viewport minus the 268px rail) ============================ */
+@media (max-width:1340px) and (min-width:1000px){
+  .hero-wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+  .snap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .snap:nth-child(2){border-right:none}
+  .snap:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .mech{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .people{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1179px){
+  .hero{min-height:0}
+  .hero-wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:400px;justify-self:start;order:-1;aspect-ratio:5/4}
+}
+@media (max-width:999px){
+  .hero{min-height:0}
+  .snap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .snap:nth-child(2){border-right:none}
+  .snap:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .mech{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .people{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .hero-wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:420px;justify-self:center;order:-1;aspect-ratio:5/4}
+  .cards2,.cmp-tabs,.exhibit{grid-template-columns:minmax(0,1fr)}
+  .units{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .arm-grid{max-width:none;gap:3px}
+  .arm .arm-h{flex-direction:column;gap:2px;font-size:.62rem;letter-spacing:.08em}
+  .pipe-head,.pipe-row{grid-template-columns:minmax(0,1fr)}
+  .pipe-head .pipe-scale{margin-top:2px}
+  .pipe-head>span:first-child{display:none}
+  .pair-row{grid-template-columns:110px minmax(0,1fr) 92px}
+  .wf-row{grid-template-columns:minmax(0,1fr) 78px;grid-template-areas:"l v" "b b"}
+  .wf-row .wf-l{grid-area:l}.wf-row .wf-axis{grid-area:b}.wf-row .wf-v{grid-area:v}
+}
+@media (max-width:640px){
+  .hero h1{font-size:clamp(2.35rem,11.4vw,3.2rem)}
+  .snap-grid,.people,.mech{grid-template-columns:minmax(0,1fr)}
+  .snap{border-right:none;border-bottom:1px solid var(--line)}
+  .snap:last-child{border-bottom:none}
+  .lg-row{grid-template-columns:22px minmax(0,1fr);gap:0 14px}
+  .lg-d{grid-column:2;grid-row:1;margin-bottom:4px}
+  .lg-m{grid-column:1;grid-row:1 / span 2}
+  .lg-t{grid-column:2;grid-row:2}
+  .steps li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .kv>div{grid-template-columns:minmax(0,1fr);gap:2px}
+  .notice{padding:14px}
+  .nav-logo img{height:30px}
+}
+@media (prefers-reduced-motion:reduce){
+  .motif-cell,.motif-fold{animation:none!important}
+}
+
+/* ---- drawing vocabulary (SVG classes: the mark's three pieces plus the membrane) ---- */
+.t-r{fill:var(--accent-2)} .t-a{fill:var(--accent-3)} .t-o{fill:var(--accent-5)}
+.t-g{fill:none;stroke:var(--accent);stroke-opacity:.7;stroke-width:1.5}
+.m-mem{stroke:oklch(0.84 0.01 var(--Hn));stroke-width:5;fill:none;stroke-linecap:round}
+.m-body{fill:oklch(0.98 0.02 var(--H)/.07)}
+.m-line{stroke:oklch(0.9 0.01 var(--Hn));stroke-width:2;fill:none;stroke-linecap:round}
+.m-dot{fill:oklch(0.9 0.01 var(--Hn))}
+.m-ring{fill:none;stroke:var(--accent-lt);stroke-width:3}
+.contact-col h3{color:var(--accent-ink)} .sec-dark .contact-col h3{color:var(--accent)}
+.sec-tint .contact-col a,.sec-tint .contact-col p,.sec-tint .contact-col address{color:var(--text)}
+.sec-tint .contact-col a{text-decoration-color:var(--accent-ink)}
+.sec-tint .contact-col a:hover{color:var(--accent-ink-d)}
+
+/* ownership: the holder's note sits under the name */
+table.fin.own th small{display:block;margin-top:2px;font-size:.76rem;font-weight:400;line-height:1.4;color:var(--text-mid)}
+/* footer text aligns with the content column beside the rail */
+@media (min-width:1000px){footer .wrap{width:min(var(--wrap),100% - var(--rail) - 44px);margin-left:calc(var(--rail) + 22px);margin-right:auto}}
+
+/* ---- money tables on a phone: a narrow sticky label column keeps the row names in view while the numbers scroll ---- */
+@media (max-width:800px){
+  table.fin{table-layout:fixed;min-width:0}
+  table.fin.pnl,table.fin.cfs{min-width:430px}
+  table.fin th,table.fin td{padding:11px 8px}
+  table.fin th:first-child{width:122px;position:sticky;left:0;z-index:2;background:var(--card);box-shadow:1px 0 0 var(--line);font-size:.8rem;line-height:1.35;white-space:normal}
+  table.fin tr.tot th:first-child{background:var(--tint)}
+  table.fin.bsh th:first-child{width:48%}
+  table.fin.own th:first-child{width:52%}
+  table.fin td.num,table.fin thead th{font-size:.76rem}
+  table.fin caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+}
+@media (max-width:640px){
+  .cmp-wrap .cmp{min-width:0;table-layout:fixed;font-size:.8rem}
+  .cmp th,.cmp td{padding:9px 7px}
+  .cmp tbody th{width:27%}
+  .cmp thead th{font-size:.58rem;letter-spacing:.06em}
+  .pipe-scale{font-size:.56rem;letter-spacing:.02em}
+}
+
+/* ---- dark band: the real charcoal (L .38) is a light dark. Panels are darker wells inside it, never lighter
+   (a white tint would drag muted text under AA), and muted text sits at L .88 or higher. ---- */
+.mech figure,.units-plate,.sec-dark .card{background:oklch(0.24 0.006 var(--Hn) / .5)}
+.sec-dark .src-l{color:var(--accent-lt);background:oklch(0.22 0.006 var(--Hn) / .5)}
+.arm .arm-h span{color:oklch(0.88 0.008 var(--Hn))}
+.sec-dark .kv dt{color:oklch(0.88 0.008 var(--Hn))}
+.sec-dark .note{color:oklch(0.91 0.006 var(--Hn))}
+.units-plate>p,.mech figcaption{color:oklch(0.94 0.006 var(--Hn))}
+.sec-dark .sec-head p{color:oklch(0.92 0.006 var(--Hn))}
+.units-key{color:oklch(0.93 0.006 var(--Hn))}
+.mech svg .m-body{fill:oklch(0.2 0.006 var(--Hn) / .45)}
+/* mc:surface */
+/* ============================================================================
+   Kyntra Bio surface system: five stocks, all derived from the tile (a 36px square).
+   Polarity: printed ink ruling on white, BLIND WHITE ruling on tint, negative ruling on dark.
+   Layer order on light stock: washes first (on top), ruling last (under). Trim hairlines sit 11px
+   inside each band edge, where no glyph can land (.wrap is 100% - 44px, text starts 22px in).
+   ============================================================================ */
+:root{
+  --lat:36px;
+  --sheet-edge:  oklch(0.40 0.073 178.5 / 0.26);   /* trim hairlines on light stock: gutter only */
+  --blind:       oklch(1 0 0 / 0.55);              /* white ruling, minor, on tint */
+  --blind-k:     oklch(1 0 0 / 0.85);
+  --sheet-neg:   oklch(0.98 0.02 178.5 / 0.05);    /* the lattice printed in negative on charcoal */
+  --trim-l:linear-gradient(var(--sheet-edge),var(--sheet-edge));
+  --trim-r:linear-gradient(var(--sheet-edge),var(--sheet-edge));
+  --trim-ld:linear-gradient(oklch(0.98 0.02 178.5 / .16),oklch(0.98 0.02 178.5 / .16));
+  --trim-rd:linear-gradient(oklch(0.98 0.02 178.5 / .16),oklch(0.98 0.02 178.5 / .16));
+}
+main>section{position:relative;padding-block:clamp(64px,9vw,124px)}
+.sec-dark,.sec-grave{color:oklch(0.92 0.005 var(--Hn))}
+.sec-dark h2,.sec-dark h3,.sec-grave h2,.sec-grave h3{color:#fff}
+
+/* NOTE: background-image takes images only. Position, size and repeat live in their own properties below,
+   one list entry per layer, in the same order. (Shorthand inside background-image is invalid and drops the whole
+   declaration: that is how this system once rendered flat while the gate still counted its gradients.) */
+
+/* A. HERO FIELD (light): a large teal fold in the top-right corner, teal and amber washes, a paper-to-tint fall, trim hairlines last */
+.sec-field{background-color:var(--paper);
+  background-image:
+    linear-gradient(225deg,oklch(0.805 0.134 178.5 / .26) 0,oklch(0.805 0.134 178.5 / .26) 34%,transparent 34.2%),
+    radial-gradient(60% 80% at 92% 8%,oklch(0.805 0.134 178.5 / .18),transparent 64%),
+    radial-gradient(46% 62% at 4% 102%,oklch(0.828 0.166 79.6 / .10),transparent 62%),
+    linear-gradient(to bottom,var(--tint) 0,var(--paper) 62%),
+    var(--trim-l),var(--trim-r);
+  background-size:100% 100%,100% 100%,100% 100%,100% 100%,1px 100%,1px 100%;
+  background-position:0 0,0 0,0 0,0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:no-repeat}
+
+/* B. PAPER (white): head wash falling from tint, trim hairlines, an amber fold in the top-right corner */
+.sec-white{background-color:var(--paper);
+  background-image:
+    linear-gradient(225deg,var(--accent-3) 0,var(--accent-3) 30px,transparent 30px),
+    linear-gradient(to bottom,var(--tint) 0,var(--paper) 230px),
+    var(--trim-l),var(--trim-r);
+  background-size:30px 30px,100% 100%,1px 100%,1px 100%;
+  background-position:100% 0,0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:no-repeat}
+
+/* C. TINT: the tile lattice in BLIND WHITE (36px squares), trim hairlines under it */
+.sec-tint{background-color:var(--tint);
+  background-image:
+    linear-gradient(to right,var(--blind) 1px,transparent 1px),
+    linear-gradient(to bottom,var(--blind) 1px,transparent 1px),
+    var(--trim-l),var(--trim-r);
+  background-size:var(--lat) var(--lat),var(--lat) var(--lat),1px 100%,1px 100%;
+  background-position:0 0,0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:repeat,repeat,no-repeat,no-repeat}
+/* C2. TINT, plain step: for the band whose tables carry the weight (no lattice behind data) */
+.sec-tint.plain{
+  background-image:
+    linear-gradient(to bottom,var(--paper) 0,var(--tint) 220px),
+    var(--trim-l),var(--trim-r);
+  background-size:100% 100%,1px 100%,1px 100%;
+  background-position:0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:no-repeat}
+
+/* D. CHARCOAL (dark): the same lattice in negative, and an amber fold top-right */
+.sec-dark{background-color:var(--deep);
+  background-image:
+    linear-gradient(225deg,var(--accent-3) 0,var(--accent-3) 34px,transparent 34px),
+    linear-gradient(to right,var(--sheet-neg) 1px,transparent 1px),
+    linear-gradient(to bottom,var(--sheet-neg) 1px,transparent 1px),
+    var(--trim-ld),var(--trim-rd);
+  background-size:34px 34px,var(--lat) var(--lat),var(--lat) var(--lat),1px 100%,1px 100%;
+  background-position:100% 0,0 0,0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:no-repeat,repeat,repeat,no-repeat,no-repeat}
+
+/* E. GRAVEST BAND: the darker charcoal, a 45 degree hatch (the fold's diagonal), no colour, no glow */
+.sec-grave{background-color:var(--deep-2);
+  background-image:
+    repeating-linear-gradient(135deg,oklch(0.98 0.02 178.5 / .05) 0,oklch(0.98 0.02 178.5 / .05) 1px,transparent 1px,transparent 15px),
+    var(--trim-ld),var(--trim-rd);
+  background-size:100% 100%,1px 100%,1px 100%;
+  background-position:0 0,11px 0,calc(100% - 11px) 0;
+  background-repeat:no-repeat}
+
+/* tables never sit on a pattern: the scroller keeps a solid card ground */
+.table-scroll,.cmp-wrap{background:var(--card)}
+.cmp-wrap{background:var(--deep-2)}
+
+footer{background-color:var(--deep-2);color:oklch(0.84 0.006 var(--Hn));
+  background-image:linear-gradient(225deg,var(--accent-2) 0,var(--accent-2) 30px,transparent 30px),var(--trim-ld),var(--trim-rd);
+  background-size:30px 30px,1px 100%,1px 100%;background-position:100% 0,11px 0,calc(100% - 11px) 0;background-repeat:no-repeat}
+footer .fls,footer .market-note{color:oklch(0.8 0.006 var(--Hn))}
+footer .fls b{color:#fff}
+footer a{color:oklch(0.92 0.01 var(--Hn))}
+.footer-links{display:flex;flex-wrap:wrap;gap:6px 26px;list-style:none;margin:0 0 20px}
+.foot-brand{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.foot-name{font-family:var(--serif);font-size:1.5rem;color:#fff;margin:0}
+.foot-glyph{display:inline-block;width:30px;height:30px;position:relative}
+.foot-glyph i{position:absolute;display:block}
+.foot-glyph i:nth-child(1){left:0;top:0;width:15px;height:15px;background:var(--accent-2)}
+.foot-glyph i:nth-child(2){left:0;top:15px;width:15px;height:15px;background:var(--accent-5);clip-path:polygon(100% 0,100% 100%,0 0)}
+.foot-glyph i:nth-child(3){left:15px;top:15px;width:15px;height:15px;background:var(--accent-3)}
+.method{font-size:.8rem;line-height:1.7;color:oklch(0.8 0.006 var(--Hn));max-width:98ch;margin-bottom:6px}
+
+@media print{
+  .sec-field,.sec-white,.sec-tint,.sec-tint.plain{background-image:none}
+  .sec-dark,.sec-grave,footer,.site-nav{background-image:none;background-color:var(--deep-2)!important;color:#fff!important}
+  .sec-dark *,.sec-grave *,footer *,.site-nav *{color:#fff!important}
+}
+@media (forced-colors:active){
+  .sec-field,.sec-white,.sec-tint,.sec-dark,.sec-grave,footer{background-image:none;border-top:1px solid CanvasText}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="concept-note">Independent design concept. Not affiliated with Kyntra Bio, Inc. Official investor relations: <a href="https://investor.kyntrabio.com/" target="_blank" rel="noopener">investor.kyntrabio.com</a></div>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="#hero"><span class="nav-logo"><img src="img/logo-light.svg" alt="Kyntra Bio" width="142" height="55"></span><span class="nav-tick">Nasdaq: KYNB</span></a>
+    <nav aria-label="Primary">
+      <button class="nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#prostate">FG-3246</a></li>
+        <li><a href="#anemia">Roxadustat</a></li>
+        <li><a href="#financials">Financials</a></li>
+        <li><a href="#obligations">Obligations</a></li>
+        <li><a href="#people">People</a></li>
+        <li><a href="#record">Filings</a></li>
+        <li><a class="btn btn-primary" href="#contact">Contact IR <span class="arw" aria-hidden="true">-&gt;</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ 00 HERO (light field): what the company is, then the listing notice in plain filed words ============ -->
+<section id="hero" class="hero sec-field" aria-labelledby="hero-h">
+  <div class="wrap hero-wrap">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Kyntra Bio, Inc. &middot; Nasdaq: KYNB &middot; formerly FibroGen, Inc.</p>
+      <h1 id="hero-h" class="reveal" style="--d:.05s">Novel therapies in <em>oncology and rare disease.</em></h1>
+      <p class="lead reveal" style="--d:.1s">Kyntra Bio is FibroGen under a new name. After selling its China business to AstraZeneca in 2025, it says it is focused on two programs: <strong>FG-3246</strong>, an antibody-drug conjugate in a Phase 2 trial for metastatic castration-resistant prostate cancer, and <strong>roxadustat</strong> for anemia in lower-risk myelodysplastic syndromes, where it plans a Phase 3 trial. Neither is approved for those uses.</p>
+      <div class="notice" role="note">
+        <span class="notice-flag" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div>
+          <h2>Listing status, filed October 6, 2026</h2>
+          <p>Nasdaq staff determined to delist Kyntra Bio&rsquo;s common stock from the Nasdaq Global Select Market after the company had not shown compliance with Listing Rule 5450(b) by September 29. The company has requested a hearing. The stock stays listed and trading while a Nasdaq Hearings Panel decides. <a class="inl" href="#obligations">Read the details</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526415545/kynb-20260930.htm" target="_blank" rel="noopener">8-K, Oct 6</a></p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#obligations">Read the disclosures <span class="arw" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://investor.kyntrabio.com/" target="_blank" rel="noopener">Official investor site <span class="arw" aria-hidden="true">&nearr;</span></a>
+        <button class="btn btn-ghost hero-pause" type="button" data-motif-toggle aria-pressed="false">Pause motion</button>
+      </div>
+    </div>
+    <div class="hero-art reveal" style="--d:.1s"><svg id="hero-motif" class="hero-motif motif-pulse" viewBox="0 0 520 520" aria-hidden="true" focusable="false"><rect class="motif-cell t-r" x="25.0" y="25.0" width="38" height="38" style="animation-delay:-0.00s"/><rect class="motif-cell t-r" x="69.0" y="25.0" width="38" height="38" style="animation-delay:-1.37s"/><rect class="motif-cell t-r" x="113.0" y="25.0" width="38" height="38" style="animation-delay:-2.74s"/><rect class="motif-cell t-r" x="157.0" y="25.0" width="38" height="38" style="animation-delay:-4.11s"/><rect class="motif-cell t-r" x="201.0" y="25.0" width="38" height="38" style="animation-delay:-5.48s"/><rect class="motif-cell t-r" x="25.0" y="69.0" width="38" height="38" style="animation-delay:-6.85s"/><rect class="motif-cell t-r" x="69.0" y="69.0" width="38" height="38" style="animation-delay:-0.72s"/><rect class="motif-cell t-r" x="113.0" y="69.0" width="38" height="38" style="animation-delay:-2.09s"/><rect class="motif-cell t-r" x="157.0" y="69.0" width="38" height="38" style="animation-delay:-3.46s"/><rect class="motif-cell t-r" x="201.0" y="69.0" width="38" height="38" style="animation-delay:-4.83s"/><rect class="motif-cell t-r" x="25.0" y="113.0" width="38" height="38" style="animation-delay:-6.20s"/><rect class="motif-cell t-r" x="69.0" y="113.0" width="38" height="38" style="animation-delay:-0.07s"/><rect class="motif-cell t-r" x="113.0" y="113.0" width="38" height="38" style="animation-delay:-1.44s"/><rect class="motif-cell t-r" x="157.0" y="113.0" width="38" height="38" style="animation-delay:-2.81s"/><rect class="motif-cell t-r" x="201.0" y="113.0" width="38" height="38" style="animation-delay:-4.18s"/><rect class="motif-cell t-r" x="25.0" y="157.0" width="38" height="38" style="animation-delay:-5.55s"/><rect class="motif-cell t-r" x="69.0" y="157.0" width="38" height="38" style="animation-delay:-6.92s"/><rect class="motif-cell t-r" x="113.0" y="157.0" width="38" height="38" style="animation-delay:-0.79s"/><rect class="motif-cell t-r" x="157.0" y="157.0" width="38" height="38" style="animation-delay:-2.16s"/><rect class="motif-cell t-r" x="201.0" y="157.0" width="38" height="38" style="animation-delay:-3.53s"/><rect class="motif-cell t-r" x="25.0" y="201.0" width="38" height="38" style="animation-delay:-4.90s"/><rect class="motif-cell t-r" x="69.0" y="201.0" width="38" height="38" style="animation-delay:-6.27s"/><rect class="motif-cell t-r" x="113.0" y="201.0" width="38" height="38" style="animation-delay:-0.14s"/><rect class="motif-cell t-r" x="157.0" y="201.0" width="38" height="38" style="animation-delay:-1.51s"/><rect class="motif-cell t-r" x="201.0" y="201.0" width="38" height="38" style="animation-delay:-2.88s"/><rect class="t-g" x="281.8" y="25.8" width="36.5" height="36.5"/><rect class="t-g" x="325.8" y="25.8" width="36.5" height="36.5"/><rect class="t-g" x="369.8" y="25.8" width="36.5" height="36.5"/><rect class="t-g" x="413.8" y="25.8" width="36.5" height="36.5"/><rect class="t-g" x="457.8" y="25.8" width="36.5" height="36.5"/><rect class="t-g" x="281.8" y="69.8" width="36.5" height="36.5"/><rect class="t-g" x="325.8" y="69.8" width="36.5" height="36.5"/><rect class="t-g" x="369.8" y="69.8" width="36.5" height="36.5"/><rect class="t-g" x="413.8" y="69.8" width="36.5" height="36.5"/><rect class="t-g" x="457.8" y="69.8" width="36.5" height="36.5"/><rect class="t-g" x="281.8" y="113.8" width="36.5" height="36.5"/><rect class="t-g" x="325.8" y="113.8" width="36.5" height="36.5"/><rect class="t-g" x="369.8" y="113.8" width="36.5" height="36.5"/><rect class="t-g" x="413.8" y="113.8" width="36.5" height="36.5"/><rect class="t-g" x="457.8" y="113.8" width="36.5" height="36.5"/><rect class="t-g" x="281.8" y="157.8" width="36.5" height="36.5"/><rect class="t-g" x="325.8" y="157.8" width="36.5" height="36.5"/><rect class="t-g" x="369.8" y="157.8" width="36.5" height="36.5"/><rect class="t-g" x="413.8" y="157.8" width="36.5" height="36.5"/><rect class="t-g" x="457.8" y="157.8" width="36.5" height="36.5"/><rect class="t-g" x="281.8" y="201.8" width="36.5" height="36.5"/><rect class="t-g" x="325.8" y="201.8" width="36.5" height="36.5"/><rect class="t-g" x="369.8" y="201.8" width="36.5" height="36.5"/><rect class="t-g" x="413.8" y="201.8" width="36.5" height="36.5"/><rect class="t-g" x="457.8" y="201.8" width="36.5" height="36.5"/><rect class="motif-cell t-o" x="25.0" y="281.0" width="38" height="38" style="animation-delay:-1.00s"/><rect class="motif-cell t-o" x="69.0" y="281.0" width="38" height="38" style="animation-delay:-2.37s"/><rect class="motif-cell t-o" x="113.0" y="281.0" width="38" height="38" style="animation-delay:-3.74s"/><rect class="motif-cell t-o" x="157.0" y="281.0" width="38" height="38" style="animation-delay:-5.11s"/><rect class="motif-cell t-o" x="201.0" y="281.0" width="38" height="38" style="animation-delay:-6.48s"/><rect class="motif-cell t-o" x="69.0" y="325.0" width="38" height="38" style="animation-delay:-0.35s"/><rect class="motif-cell t-o" x="113.0" y="325.0" width="38" height="38" style="animation-delay:-1.72s"/><rect class="motif-cell t-o" x="157.0" y="325.0" width="38" height="38" style="animation-delay:-3.09s"/><rect class="motif-cell t-o" x="201.0" y="325.0" width="38" height="38" style="animation-delay:-4.46s"/><rect class="motif-cell t-o" x="113.0" y="369.0" width="38" height="38" style="animation-delay:-5.83s"/><rect class="motif-cell t-o" x="157.0" y="369.0" width="38" height="38" style="animation-delay:-7.20s"/><rect class="motif-cell t-o" x="201.0" y="369.0" width="38" height="38" style="animation-delay:-1.07s"/><rect class="motif-cell t-o" x="157.0" y="413.0" width="38" height="38" style="animation-delay:-2.44s"/><rect class="motif-cell t-o" x="201.0" y="413.0" width="38" height="38" style="animation-delay:-3.81s"/><rect class="motif-cell t-o" x="201.0" y="457.0" width="38" height="38" style="animation-delay:-5.18s"/><rect class="motif-cell t-a" x="281.0" y="281.0" width="38" height="38" style="animation-delay:-6.55s"/><rect class="motif-cell t-a" x="325.0" y="281.0" width="38" height="38" style="animation-delay:-0.42s"/><rect class="motif-cell t-a" x="369.0" y="281.0" width="38" height="38" style="animation-delay:-1.79s"/><rect class="motif-cell t-a" x="413.0" y="281.0" width="38" height="38" style="animation-delay:-3.16s"/><rect class="motif-cell t-a" x="457.0" y="281.0" width="38" height="38" style="animation-delay:-4.53s"/><rect class="motif-cell t-a" x="281.0" y="325.0" width="38" height="38" style="animation-delay:-5.90s"/><rect class="motif-cell t-a" x="325.0" y="325.0" width="38" height="38" style="animation-delay:-7.27s"/><rect class="motif-cell t-a" x="369.0" y="325.0" width="38" height="38" style="animation-delay:-1.14s"/><rect class="motif-cell t-a" x="413.0" y="325.0" width="38" height="38" style="animation-delay:-2.51s"/><rect class="motif-cell t-a" x="457.0" y="325.0" width="38" height="38" style="animation-delay:-3.88s"/><rect class="motif-cell t-a" x="281.0" y="369.0" width="38" height="38" style="animation-delay:-5.25s"/><rect class="motif-cell t-a" x="325.0" y="369.0" width="38" height="38" style="animation-delay:-6.62s"/><rect class="motif-cell t-a" x="369.0" y="369.0" width="38" height="38" style="animation-delay:-0.49s"/><rect class="motif-cell t-a" x="413.0" y="369.0" width="38" height="38" style="animation-delay:-1.86s"/><rect class="motif-cell t-a" x="457.0" y="369.0" width="38" height="38" style="animation-delay:-3.23s"/><rect class="motif-cell t-a" x="281.0" y="413.0" width="38" height="38" style="animation-delay:-4.60s"/><rect class="motif-cell t-a" x="325.0" y="413.0" width="38" height="38" style="animation-delay:-5.97s"/><rect class="motif-cell t-a" x="369.0" y="413.0" width="38" height="38" style="animation-delay:-7.34s"/><rect class="motif-cell t-a" x="413.0" y="413.0" width="38" height="38" style="animation-delay:-1.21s"/><rect class="motif-cell t-a" x="457.0" y="413.0" width="38" height="38" style="animation-delay:-2.58s"/><rect class="motif-cell t-a" x="281.0" y="457.0" width="38" height="38" style="animation-delay:-3.95s"/><rect class="motif-cell t-a" x="325.0" y="457.0" width="38" height="38" style="animation-delay:-5.32s"/><rect class="motif-cell t-a" x="369.0" y="457.0" width="38" height="38" style="animation-delay:-6.69s"/><rect class="motif-cell t-a" x="413.0" y="457.0" width="38" height="38" style="animation-delay:-0.56s"/><rect class="motif-cell t-a" x="457.0" y="457.0" width="38" height="38" style="animation-delay:-1.93s"/></svg></div>
+  </div>
+</section>
+
+<!-- ============ 01 SNAPSHOT (paper): four figures, each with its period and source ============ -->
+<section id="snapshot" class="snapshot sec-white" aria-labelledby="snap-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Latest reported figures</span>
+      <h2 id="snap-h">Six months to June 30, 2026</h2>
+      <p>From the 10-Q filed August 13, 2026, in US dollars as filed. Revenue and losses are from continuing operations; the China business is reported separately as discontinued operations.</p>
+    </div>
+    <div class="snap-grid">
+      <article class="snap reveal" style="--d:.04s">
+        <span class="snap-num"><small>$</small>95.7<small>M</small></span>
+        <span class="snap-label">Cash, investments and accounts receivable at June 30, 2026, the sum the company reports: $50.6 million of cash and equivalents, $44.7 million of investments and $0.3 million of receivables (rounded). $42.6 million was paid to a royalty financier on August 31, which the company says leaves $53.1 million pro forma.</span>
+        <span class="snap-src"><span class="tg tg-co">Company figure</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, balance sheet</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a></span>
+      </article>
+      <article class="snap reveal" style="--d:.08s">
+        <span class="snap-num"><small>$</small>31.4<small>M</small></span>
+        <span class="snap-label">Loss from operations for the six months, on revenue of $2.3 million. Second-quarter revenue was negative $1.5 million after a revenue estimate was lowered.</span>
+        <span class="snap-src"><span class="tg">Filed</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, statements</a></span>
+      </article>
+      <article class="snap reveal" style="--d:.12s">
+        <span class="snap-num">4,049,124</span>
+        <span class="snap-label">Shares outstanding at July 31, 2026, after a 1-for-25 reverse stock split on June 16, 2025 cut the count from about 101.1 million.</span>
+        <span class="snap-src"><span class="tg">Filed</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, cover</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, note 1</a></span>
+      </article>
+      <article class="snap reveal" style="--d:.16s">
+        <span class="snap-num">Q4 <small>2026</small></span>
+        <span class="snap-label">When the company says the FG-3246 Phase 2 interim analysis is on track, and its goal for starting a roxadustat Phase 3 (internal development or a partner still being evaluated). In March it had said the second half of 2026 for both.</span>
+        <span class="snap-src"><span class="tg tg-co">Company statement</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-ex99_1.htm" target="_blank" rel="noopener">Aug 13 release</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108324/kynb-ex99_1.htm" target="_blank" rel="noopener">Mar 16 release</a></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 STORY (tint, tile lattice): how FibroGen became Kyntra Bio, in dated filings ============ -->
+<section id="story" class="sec-tint" aria-labelledby="story-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The company</span>
+      <h2 id="story-h">FibroGen became <em>Kyntra Bio</em> between February 2025 and October 2026</h2>
+      <p>A sale, a reverse split, a new name, a bankruptcy abroad, a renegotiated financing and a listing notice, each from a dated filing. The company had 34 employees in the U.S. at December 31, 2025 and is based in San Francisco.</p>
+    </div>
+    <ol class="ledger">
+        <li class="lg-row reveal is-corp">
+          <span class="lg-d">Feb 20, 2025</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Agrees to sell its China business</h3><p>FibroGen signed a share purchase agreement with AstraZeneca Treasury Limited to sell FibroGen International (Hong Kong), which held all its roxadustat assets in China and a 51.1% interest in Falikang. The business has been reported as discontinued operations since December 31, 2024.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 3</a></div>
+        </li>
+        <li class="lg-row reveal is-corp">
+          <span class="lg-d">Jun 16, 2025</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>One-for-25 reverse stock split</h3><p>Shares outstanding fell from about 101.1 million to about 4.0 million.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, note 1</a></div>
+        </li>
+        <li class="lg-row reveal is-corp">
+          <span class="lg-d">Aug 29, 2025</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>The China sale closes for $220.4 million</h3><p>$85.0 million of enterprise value plus $135.4 million of net cash held in China. $210.4 million was paid at closing; $10.0 million was held back: $6.0 million, paid as $6.4 million with a $0.4 million net-cash adjustment on November 6, 2025, and $4.0 million on June 2, 2026.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 3</a><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312525269529/fgen-20251106.htm" target="_blank" rel="noopener">8-K, Nov 6, 2025</a><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526264000/kynb-20260602.htm" target="_blank" rel="noopener">8-K, Jun 9</a></div>
+        </li>
+        <li class="lg-row reveal is-finance">
+          <span class="lg-d">2025</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Senior secured term loans repaid</h3><p>The cash flow statement shows $75.0 million of repayments and $5.55 million of payoff premium and fees; the loss on debt extinguishments was $6.6 million.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, cash flows</a></div>
+        </li>
+        <li class="lg-row reveal is-corp">
+          <span class="lg-d">Jan 7, 2026</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Renamed Kyntra Bio</h3><p>The common stock began trading as KYNB on January 8, 2026. The company said the new name reflects a sharpened focus on novel therapies in oncology and rare disease.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526006327/fgen-20260107.htm" target="_blank" rel="noopener">8-K, Jan 7</a><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, note 1</a></div>
+        </li>
+        <li class="lg-row reveal is-listing">
+          <span class="lg-d">Apr 2, 2026</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Nasdaq notice</h3><p>Nasdaq told the company it no longer met the $50 million total assets and total revenue test of Listing Rule 5450(b)(3)(A), because the China revenue sits in discontinued operations. It also did not meet the equity or market-value alternatives.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526149624/kynb-20260402.htm" target="_blank" rel="noopener">8-K, Apr 9</a></div>
+        </li>
+        <li class="lg-row reveal is-corp">
+          <span class="lg-d">Apr 16, 2026</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>FibroGen Europe files for bankruptcy</h3><p>The subsidiary voluntarily filed for bankruptcy in Finland, and a Helsinki court declared it bankrupt on April 16, so Kyntra Bio deconsolidated it. That removed $19.2 million of TEKES loans, non-recourse to Kyntra Bio and settled, the company says, for about $0.1 million in June, and $12.5 million of non-controlling interest. It produced a $30.9 million gain, which the company says is not a strategic shift.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 2</a><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a></div>
+        </li>
+        <li class="lg-row reveal is-finance">
+          <span class="lg-d">Aug 31, 2026</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Royalty financing renegotiated</h3><p>The cap on payments under the royalty financing agreement with NQ Project Phoebus fell from $125 million to $65 million, and $42.6 million was paid upfront. In the same release the company said its cash runway is now expected into the fourth quarter of 2027, where on August 13 it had said into 2028.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-ex99_1.htm" target="_blank" rel="noopener">Release</a></div>
+        </li>
+        <li class="lg-row reveal is-listing is-now">
+          <span class="lg-d">Sep 30, 2026</span><span class="lg-m" aria-hidden="true"></span>
+          <div class="lg-t"><h3>Nasdaq staff determines to delist</h3><p>The staff letter said the company had not demonstrated compliance with Listing Rule 5450(b) by the September 29 deadline. A hearing has been requested, and the stock stays listed pending the Panel&rsquo;s decision.</p><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526415545/kynb-20260930.htm" target="_blank" rel="noopener">8-K, Oct 6</a></div>
+        </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 03 PIPELINE (paper): the company's own chart redrawn, then the two diseases as the company sizes them ============ -->
+<section id="pipeline" class="sec-white" aria-labelledby="pipe-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Pipeline</span>
+      <h2 id="pipe-h">Three programs, <em>two diseases</em></h2>
+      <p>The company&rsquo;s own pipeline chart, redrawn. Teal marks a wholly-owned program and red an in-licensed one. The bars end where the company&rsquo;s chart ends them.</p>
+    </div>
+    <div class="pipe reveal" role="group" aria-label="Pipeline chart redrawn from the company's own: roxadustat, wholly-owned, to Phase 3 ready; FG-3246 and FG-3180, in-licensed, in Phase 2">
+      <div class="pipe-head"><span></span><div class="pipe-scale" aria-hidden="true"><span>Preclinical</span><span>Phase 1</span><span>Phase 2</span><span>Phase 3</span></div></div>
+      <div class="pipe-row">
+        <div class="pipe-name"><h3>Roxadustat</h3><p>HIF-PH inhibitor. Anemia in patients with lower-risk myelodysplastic syndromes. Wholly-owned.</p></div>
+        <div class="pipe-track" aria-hidden="true"><span class="pipe-bar" style="--end:75%"></span><span class="pipe-lab" style="--end:75%">Phase 3 ready</span></div>
+      </div>
+      <div class="pipe-row">
+        <div class="pipe-name"><h3>FG-3246</h3><p>CD46-targeting antibody-drug conjugate. Metastatic castration-resistant prostate cancer. In-licensed.</p></div>
+        <div class="pipe-track" aria-hidden="true"><span class="pipe-bar lic" style="--end:65%"></span><span class="pipe-lab" style="--end:65%">Phase 2</span></div>
+      </div>
+      <div class="pipe-row">
+        <div class="pipe-name"><h3>FG-3180</h3><p>CD46-targeting PET imaging agent. Metastatic castration-resistant prostate cancer. In-licensed.</p></div>
+        <div class="pipe-track" aria-hidden="true"><span class="pipe-bar lic" style="--end:65%"></span><span class="pipe-lab" style="--end:65%">Phase 2</span></div>
+      </div>
+      <div class="pipe-key"><span><i></i>Wholly-owned</span><span><i class="lic"></i>In licensed</span></div>
+    </div>
+    <p class="note reveal">Source: the pipeline chart on kyntrabio.com, redrawn; bar lengths are the chart&rsquo;s own and are not a measure of progress or probability. FG-3246 and FG-3180 are licensed from Fortis Therapeutics, which Kyntra Bio consolidates and has an option to acquire (see <a class="inl" href="#obligations">Listing, financing and obligations</a>). FG-3246 and FG-3180 are investigational and not approved by any regulatory authority, per the company website. Roxadustat is approved in China, Europe, Japan and other countries for anemia in chronic kidney disease, and is investigational for anemia in lower-risk MDS, per the company website. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, Item 1</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.kyntrabio.com/fg-3246/" target="_blank" rel="noopener">kyntrabio.com, FG-3246</a> <a class="src-l" href="https://www.kyntrabio.com/roxadustat/" target="_blank" rel="noopener">kyntrabio.com, roxadustat</a></p>
+    <div class="cards2">
+      <article class="card reveal" style="--d:.04s">
+        <span class="eyebrow">Prostate cancer, as the company sizes it</span>
+        <ul>
+          <li><b>~65,000</b><span>drug-treatable mCRPC cases a year in the U.S., across lines of therapy</span></li>
+          <li><b>~30%</b><span>five-year survival in mCRPC</span></li>
+          <li><b>5 to 9</b><span>months of radiographic progression-free survival in the setting FG-3246 targets: about 5 to 6 after switching to another ARPI, about 8 with chemotherapy, 9.3 with Pluvicto in PSMA-positive patients</span></li>
+        </ul>
+        <p class="note"><span class="tg tg-co">Company statement, no source given</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+      </article>
+      <article class="card reveal" style="--d:.08s">
+        <span class="eyebrow">Myelodysplastic syndromes, as the company sizes it</span>
+        <ul>
+          <li><b>~74,000</b><span>people with a diagnosed MDS in the U.S.; about 20,000 adults are diagnosed each year, 70% of them lower-risk</span></li>
+          <li><b>~80%</b><span>of MDS patients have anemia, the most common presentation</span></li>
+          <li><b>~$3B</b><span>global MDS market in 2023, projected to reach about $5B by 2030 (about 9% a year), per Grand View Research as cited by the company</span></li>
+        </ul>
+        <p class="note"><span class="tg tg-co">Company statement</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 FG-3246 (charcoal): the mechanism in the mark's pieces, then the Phase 2 as a unit chart ============ -->
+<section id="prostate" class="sec-dark" aria-labelledby="pro-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Prostate cancer</span>
+      <h2 id="pro-h">FG-3246: a CD46 antibody-drug conjugate in <em>Phase 2</em></h2>
+      <p>FG-3246 is an investigational antibody-drug conjugate licensed from Fortis Therapeutics. FG-3180 is a companion PET imaging agent built on the same antibody. Neither is approved by any regulatory authority. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-ex99_1.htm" target="_blank" rel="noopener">Aug 13 release</a> <a class="src-l" href="https://www.kyntrabio.com/fg-3246/" target="_blank" rel="noopener">kyntrabio.com, FG-3246</a></p>
+    </div>
+    <div class="mech">
+        <figure class="reveal" style="--d:.04s"><svg viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect class="m-body" x="0" y="100" width="200" height="50"/><path class="m-mem" d="M4 100 H196"/><rect class="t-a" x="27" y="93" width="14" height="14"/><rect class="t-a" x="93" y="93" width="14" height="14"/><rect class="t-a" x="159" y="93" width="14" height="14"/><path class="m-line" d="M100 76 V93"/><rect class="t-r" x="89" y="54" width="22" height="22"/><polygon class="t-o" points="111,54 127,54 127,70"/></svg><figcaption><b>1 &middot; Targets CD46</b>FG-3246 binds an epitope of CD46, a cell receptor the company says is present at high levels in prostate cancer and other tumor types and has very limited expression in most normal tissues.</figcaption></figure>
+        <figure class="reveal" style="--d:.08s"><svg viewBox="0 0 200 150" aria-hidden="true" focusable="false"><path class="m-body" d="M0 96 H70 C78 96 82 128 100 128 C118 128 122 96 130 96 H200 V150 H0 Z"/><path class="m-mem" d="M4 96 H70 C78 96 82 128 100 128 C118 128 122 96 130 96 H196"/><rect class="t-a" x="27" y="89" width="14" height="14"/><rect class="t-a" x="159" y="89" width="14" height="14"/><rect class="t-a" x="93" y="108" width="14" height="14"/><path class="m-line" d="M100 108 V100"/><rect class="t-r" x="89" y="78" width="22" height="22"/><polygon class="t-o" points="111,78 127,78 127,94"/></svg><figcaption><b>2 &middot; Internalizes</b>CD46 induces internalization upon antibody binding, which the company says makes it a suitable target for an antibody-drug conjugate.</figcaption></figure>
+        <figure class="reveal" style="--d:.12s"><svg viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect class="t-r" x="26" y="48" width="48" height="48"/><path class="m-line" d="M78 72 H102"/><circle class="m-dot" cx="84" cy="72" r="2.2"/><circle class="m-dot" cx="96" cy="72" r="2.2"/><polygon class="t-o" points="106,48 146,48 146,88"/></svg><figcaption><b>3 &middot; Carries MMAE</b>The conjugate pairs an anti-CD46 antibody, YS5, with MMAE, an anti-mitotic agent the company says is used in four commercially approved ADCs.</figcaption></figure>
+        <figure class="reveal" style="--d:.16s"><svg viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect class="t-r" x="22" y="54" width="36" height="36"/><path class="m-line" d="M62 72 H98"/><circle class="m-ring" cx="110" cy="72" r="12"/><rect class="t-a" x="136" y="36" width="14" height="14"/><rect class="t-a" x="156" y="36" width="14" height="14"/><rect class="t-a" x="176" y="36" width="14" height="14"/><rect class="t-a" x="136" y="56" width="14" height="14"/><rect class="t-a" x="156" y="56" width="14" height="14"/><rect class="t-a" x="176" y="56" width="14" height="14"/><rect class="t-a" x="136" y="76" width="14" height="14"/><rect class="t-a" x="156" y="76" width="14" height="14"/><rect class="t-a" x="176" y="76" width="14" height="14"/></svg><figcaption><b>4 &middot; FG-3180 images CD46</b>FG-3180 uses the same antibody with a zirconium-89 tracer for PET imaging. It is being studied to identify CD46-positive lesions and to support patient selection.</figcaption></figure>
+    </div>
+    <p class="note">In these drawings the red square stands for the antibody, the orange triangle for the MMAE payload and the amber square for the CD46 receptor. The mapping is this page&rsquo;s drawing convention, not the company&rsquo;s; the captions are the company&rsquo;s statements, from the sources linked here. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-ex99_1.htm" target="_blank" rel="noopener">Aug 13 release</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.kyntrabio.com/fg-3246/" target="_blank" rel="noopener">kyntrabio.com, FG-3246</a></p>
+    <div class="units-plate reveal">
+      <h3>Phase 2: 75 patients, three doses</h3>
+      <p>Trial NCT06842498 is a randomized, open-label dose-optimization study in patients with mCRPC who progressed after an androgen receptor pathway inhibitor and have not had chemotherapy for mCRPC. The primary endpoint is the best dose for Phase 3. The first look is an interim analysis of a composite of PSA50 response and overall response rate, planned once 12 patients in each arm have completed up to 12 weeks or discontinued. The company expects it in the fourth quarter of 2026. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+      <div class="units" role="img" aria-label="Seventy-five patient tiles in three arms of 25, dosed at 1.8, 2.4 and 2.7 milligrams per kilogram. In each arm the first 12 tiles mark the patients whose first 12 weeks trigger the interim analysis.">
+        <div class="arm a1 reveal" style="--d:.04s"><p class="arm-h">1.8 mg/kg <span>25 patients</span></p><div class="arm-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i></div></div><div class="arm a2 reveal" style="--d:.08s"><p class="arm-h">2.4 mg/kg <span>25 patients</span></p><div class="arm-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i></div></div><div class="arm a3 reveal" style="--d:.12s"><p class="arm-h">2.7 mg/kg <span>25 patients</span></p><div class="arm-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i><i class="out"></i></div></div>
+      </div>
+      <div class="units-key"><span><i></i>One of the 12 patients per arm whose first 12 weeks trigger the interim analysis (36 in all) <span class="tg tg-cm">Computed</span></span><span><i class="out"></i>The rest of the planned 25 per arm</span></div>
+      <p class="note">Doses are mg/kg AJBW as filed. The company has not reported how many patients are enrolled. Every eligible patient also takes part in the FG-3180 PET sub-study before randomization.</p>
+    </div>
+    <div class="cmp-tabs">
+      <article class="card reveal" style="--d:.04s">
+        <span class="eyebrow">Phase 1, Fortis-sponsored</span>
+        <h3>Single agent, published March 2025</h3>
+<dl class="kv"><div><dt>Patients</dt><dd>25 RECIST-evaluable, heavily pretreated, biomarker unselected</dd></div><div><dt>Confirmed response</dt><dd>20%, median duration 7.5 months; all responses at 2.7 mg/kg or higher</dd></div><div><dt>Disease control</dt><dd>80%; treatment past 24 weeks in 12 patients (48%)</dd></div><div><dt>PSA50</dt><dd>36% of 39 evaluable patients</dd></div><div><dt>Median rPFS</dt><dd>8.7 months in 40 patients</dd></div><div><dt>CD46 positive</dt><dd>12 of 15 baseline tumors (80%) by immunohistochemistry</dd></div></dl>
+        <p class="note">Journal of Clinical Oncology. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+      </article>
+      <article class="card reveal" style="--d:.08s">
+        <span class="eyebrow">UCSF Phase 1b/2, investigator-sponsored</span>
+        <h3>With enzalutamide, presented February 2026</h3>
+<dl class="kv"><div><dt>Patients</dt><dd>44, biomarker unselected (17 dose escalation, 27 expansion)</dd></div><div><dt>Composite response</dt><dd>21% overall; 40% in patients who had progressed on only one prior ARPI</dd></div><div><dt>Median rPFS</dt><dd>7.0 months overall; 10.1 months after one prior ARPI</dd></div><div><dt>FG-3180 uptake</dt><dd>numerically associated with PSA50 response (nominal p = 0.053)</dd></div><div><dt>Safety</dt><dd>similar to Phase 1; fatigue, peripheral neuropathy, anorexia and dysgeusia most frequent; neutropenia managed with G-CSF; cumulative toxicities including neuropathy led some patients to stop</dd></div></dl>
+        <p class="note">ASCO GU 2026. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+      </article>
+    </div>
+    <p class="note">These are small, early studies in different populations, and the first has no comparator. The company&rsquo;s own risk factors say Phase 1 and Phase 2 results may not be indicative of the results of larger trials. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a></p>
+  </div>
+</section>
+
+<!-- ============ 05 ROXADUSTAT (tint step): the trial that missed its primary comparison, and the plan that follows it ============ -->
+<section id="anemia" class="sec-tint plain" aria-labelledby="rox-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Anemia</span>
+      <h2 id="rox-h">Roxadustat: from kidney disease to <em>MDS</em></h2>
+      <p>Roxadustat is an oral HIF-PH inhibitor approved in Europe, Japan, China and other countries for anemia in chronic kidney disease. Kyntra Bio plans a Phase 3 trial in anemia of lower-risk MDS, a use for which it is investigational. It holds the rights in the U.S., Canada, Mexico and markets not held by AstraZeneca or licensed to Astellas, which sells it as EVRENZO in Europe and Japan. The 10-K says roxadustat is not approved for commercialization in any indication in the U.S., Canada or Mexico, the territories Kyntra Bio retains; China was sold to AstraZeneca in 2025. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, Item 1</a></p>
+    </div>
+    <div class="card reveal">
+      <span class="eyebrow">MATTERHORN, Phase 2/3 in MDS</span>
+      <h3>Transfusion independence, roxadustat against placebo</h3>
+      <div class="pairs">
+<div class="pair reveal"><h3>Primary comparison: independent of transfusions for 56 consecutive days within 28 weeks</h3><div class="pair-row "><span class="lab">Roxadustat</span><div class="bar"><i style="--w:47.5%"></i></div><span class="val">47.5% of 80</span></div><div class="pair-row plc"><span class="lab">Placebo</span><div class="bar"><i style="--w:33.3%"></i></div><span class="val">33.3% of 57</span></div><p class="note">The 28-week topline was presented in the fourth quarter of 2023. The filing says the p-value was not significant.</p></div><div class="pair reveal"><h3>Post hoc: ring sideroblast-negative patients (84 of 140 enrolled), 8 weeks within 28</h3><div class="pair-row "><span class="lab">Roxadustat</span><div class="bar"><i style="--w:48%"></i></div><span class="val">48%</span></div><div class="pair-row plc"><span class="lab">Placebo</span><div class="bar"><i style="--w:28%"></i></div><span class="val">28%</span></div></div><div class="pair reveal"><h3>Post hoc: high transfusion burden, 8 weeks within 28</h3><div class="pair-row "><span class="lab">Roxadustat</span><div class="bar"><i style="--w:36%"></i></div><span class="val">36% of 22</span></div><div class="pair-row plc"><span class="lab">Placebo</span><div class="bar"><i style="--w:7%"></i></div><span class="val">7% of 15</span></div><p class="note">Nominal p = 0.04.</p></div>
+      </div>
+      <p class="caveat"><b>Read with the caveats.</b> The primary comparison did not reach significance. The two other results are post hoc analyses, the company&rsquo;s own term, and the high-transfusion-burden result comes from 22 and 15 patients with a nominal p-value. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-ex99_1.htm" target="_blank" rel="noopener">Aug 13 release</a></p>
+    </div>
+    <div class="cards2">
+      <article class="card reveal" style="--d:.04s">
+        <span class="eyebrow">The planned Phase 3</span>
+        <h3>Planned design, partly aligned with the FDA</h3>
+<dl class="kv"><div><dt>Design</dt><dd>randomized, double-blind, placebo-controlled; about 200 patients, 2:1 roxadustat to placebo</dd></div><div><dt>Patients</dt><dd>lower-risk MDS needing at least 4 red-cell units in each of two consecutive 8-week periods, who are refractory to, intolerant of or ineligible for ESA therapy</dd></div><div><dt>Primary endpoint</dt><dd>8-week transfusion independence over the first 24 weeks</dd></div><div><dt>Key secondary</dt><dd>12-, 16- and 24-week transfusion independence over 48 weeks</dd></div><div><dt>FDA alignment</dt><dd>the company says alignment was reached on the patient population, the dose regimen and the 2:1 placebo control; the FDA recommended a different primary endpoint (see right)</dd></div><div><dt>Timing</dt><dd>goal to start in the fourth quarter of 2026, while it evaluates internal development and partnership opportunities</dd></div></dl>
+      </article>
+      <article class="card reveal" style="--d:.08s">
+        <span class="eyebrow">What the filing flags</span>
+        <h3>A shorter endpoint than the FDA suggested</h3>
+        <p>The FDA recommended a longer primary endpoint, 16 weeks of transfusion independence over 48 weeks. The company chose 8 weeks over 24 and says that is consistent with past and current placebo-controlled studies in this indication.</p>
+<dl class="kv"><div><dt>July 2025</dt><dd>positive Type C meeting; alignment on several design elements</dd></div><div><dt>December 2025</dt><dd>Orphan Drug Designation for MDS; seven years of U.S. exclusivity if approved for lower-risk MDS</dd></div><div><dt>Since</dt><dd>protocol finalized after further FDA comments</dd></div></dl>
+        <p class="note"><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, MD&amp;A</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108324/kynb-ex99_1.htm" target="_blank" rel="noopener">Mar 16 release</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 FINANCIALS (paper): what is inside the headline, then the statements ============ -->
+<section id="financials" class="sec-white" aria-labelledby="fin-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Financials</span>
+      <h2 id="fin-h">Reported results, <em>continuing operations</em></h2>
+      <p>US dollars as filed. The China business is in discontinued operations in every period, so the revenue history in older FibroGen filings, which includes China, is not comparable and is not shown here.</p>
+    </div>
+    <div class="wf reveal">
+      <h3>What is inside the $183.5 million of 2025 net income</h3>
+      <p>The headline is a profit; the continuing business lost money. Bars are on one scale, in millions of dollars. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, statements and note 3</a></p>
+      <div class="wf-rows"><div class="wf-row"><span class="wf-l">Loss from operations</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar neg" style="--w:14.8%"></span></div><span class="wf-v neg">&minus;45.9</span></div><div class="wf-row"><span class="wf-l">Interest and other, net (includes a $6.6M loss on debt extinguishments)</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar neg" style="--w:4.0%"></span></div><span class="wf-v neg">&minus;12.4</span></div><div class="wf-row"><span class="wf-l">Income tax benefit</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar pos" style="--w:0.0%"></span></div><span class="wf-v">+0.1</span></div><div class="wf-row sum"><span class="wf-l">Loss from continuing operations</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar neg" style="--w:18.8%"></span></div><span class="wf-v neg">&minus;58.2</span></div><div class="wf-row"><span class="wf-l">China operating income, in discontinued operations (includes AstraZeneca revenue deferred in earlier years, recognized in full at closing)</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar pos" style="--w:63.5%"></span></div><span class="wf-v">+196.6</span></div><div class="wf-row"><span class="wf-l">Gain on the China divestiture, in discontinued operations</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar pos" style="--w:17.0%"></span></div><span class="wf-v">+52.6</span></div><div class="wf-row"><span class="wf-l">Interest, other and equity income in discontinued operations (computed)</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar neg" style="--w:2.4%"></span></div><span class="wf-v neg">&minus;7.5</span></div><div class="wf-row sum"><span class="wf-l">Income from discontinued operations</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar pos" style="--w:78.0%"></span></div><span class="wf-v">+241.7</span></div><div class="wf-row sum"><span class="wf-l">Net income</span><div class="wf-axis" style="--zero:22%"><span class="wf-bar pos" style="--w:59.2%"></span></div><span class="wf-v">+183.5</span></div></div>
+      <div class="wf-key"><span><i></i>Reduces the result</span><span><i class="pos"></i>Adds to the result</span><span><span class="tg tg-cm">Computed</span> one line, to complete the sum</span></div>
+      <p class="note">China product revenue in 2025 was $226.7 million, including $218.6 million from sales to Falikang under the AstraZeneca China performance obligation. The deferred balance of that obligation was $132.1 million at December 31, 2024, and the 10-K says all previously deferred revenue was recognized in the third quarter of 2025, when the sale closed on August 29. 10-K, notes 3 and 4</p>
+    </div>
+    <div class="wf reveal">
+      <h3>What is inside the $12.0 million of second-quarter 2026 net income</h3>
+      <p>Operations lost money again; the gain is the Finnish deconsolidation, which the company says is not a strategic shift. Figures may not add exactly because of rounding and a $1 thousand tax benefit. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, statements and note 2</a></p>
+      <div class="wf-rows"><div class="wf-row"><span class="wf-l">Loss from operations</span><div class="wf-axis" style="--zero:40%"><span class="wf-bar neg" style="--w:34.1%"></span></div><span class="wf-v neg">&minus;17.6</span></div><div class="wf-row"><span class="wf-l">Interest expense</span><div class="wf-axis" style="--zero:40%"><span class="wf-bar neg" style="--w:4.6%"></span></div><span class="wf-v neg">&minus;2.4</span></div><div class="wf-row"><span class="wf-l">Interest income and other, net</span><div class="wf-axis" style="--zero:40%"><span class="wf-bar pos" style="--w:1.9%"></span></div><span class="wf-v">+1.0</span></div><div class="wf-row"><span class="wf-l">Gain on deconsolidating FibroGen Europe</span><div class="wf-axis" style="--zero:40%"><span class="wf-bar pos" style="--w:60.0%"></span></div><span class="wf-v">+30.9</span></div><div class="wf-row sum"><span class="wf-l">Net income from continuing operations</span><div class="wf-axis" style="--zero:40%"><span class="wf-bar pos" style="--w:23.2%"></span></div><span class="wf-v">+12.0</span></div></div>
+    </div>
+    <div class="table-scroll reveal">
+      <table class="fin pnl">
+        <caption>Statements of operations, continuing operations, US$ thousands. FY is the year to December 31; H1 is the six months to June 30</caption>
+        <thead><tr><th scope="col">US$ thousands</th><th scope="col">FY2024</th><th scope="col">FY2025</th><th scope="col">H1 2025</th><th scope="col">H1 2026</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Development and other revenue</th><td class="num">1,948</td><td class="num">592</td><td class="num">277</td><td class="num">349</td></tr>
+            <tr><th scope="row">Drug product revenue, net</th><td class="num">27,673</td><td class="num">5,848</td><td class="num">3,811</td><td class="num">1,915</td></tr>
+            <tr class="tot"><th scope="row">Total revenue</th><td class="num">29,621</td><td class="num">6,440</td><td class="num">4,088</td><td class="num">2,264</td></tr>
+            <tr><th scope="row">Cost of goods sold</th><td class="num">15,561</td><td class="num">556</td><td class="num">337</td><td class="num">4,108</td></tr>
+            <tr><th scope="row">Research and development</th><td class="num">95,692</td><td class="num">23,517</td><td class="num">15,040</td><td class="num">14,387</td></tr>
+            <tr><th scope="row">Selling, general and administrative</th><td class="num">49,330</td><td class="num">27,709</td><td class="num">15,164</td><td class="num">15,128</td></tr>
+            <tr><th scope="row">Restructuring charge</th><td class="num">19,454</td><td class="num">553</td><td class="num">519</td><td class="num">33</td></tr>
+            <tr class="tot"><th scope="row">Loss from operations</th><td class="num">-150,416</td><td class="num">-45,895</td><td class="num">-26,972</td><td class="num">-31,392</td></tr>
+            <tr><th scope="row">Interest expense</th><td class="num">-8,247</td><td class="num">-8,759</td><td class="num">-4,265</td><td class="num">-4,795</td></tr>
+            <tr><th scope="row">Loss on debt extinguishments</th><td class="num dim">none</td><td class="num">-6,583</td><td class="num dim">none</td><td class="num dim">none</td></tr>
+            <tr><th scope="row">Gain on deconsolidating FibroGen Europe</th><td class="num dim">none</td><td class="num dim">none</td><td class="num dim">none</td><td class="num">30,940</td></tr>
+            <tr><th scope="row">Interest income and other, net</th><td class="num">5,296</td><td class="num">2,943</td><td class="num">698</td><td class="num">2,088</td></tr>
+            <tr><th scope="row">Income tax provision (benefit)</th><td class="num">-269</td><td class="num">-90</td><td class="num">-90</td><td class="num">-1</td></tr>
+            <tr class="tot"><th scope="row">Loss from continuing operations</th><td class="num">-153,098</td><td class="num">-58,204</td><td class="num">-30,449</td><td class="num">-3,158</td></tr>
+            <tr><th scope="row">Income (loss) from discontinued operations, net</th><td class="num">105,519</td><td class="num">241,656</td><td class="num">27,485</td><td class="num">-66</td></tr>
+            <tr class="tot"><th scope="row">Net income (loss)</th><td class="num">-47,579</td><td class="num">183,452</td><td class="num">-2,964</td><td class="num">-3,224</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><span class="tg">Filed</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q</a> H1 is the six months to June 30. Expenses are positive and losses negative, as filed; in the tax row a minus sign is a benefit. Second-quarter 2026 drug product revenue was negative because the estimate of variable consideration on API held by Astellas for Japan was lowered, a $2.9 million reduction in the quarter against $1.4 million of European revenue.</p>
+    <div class="table-scroll reveal" style="margin-top:28px">
+      <table class="fin bsh">
+        <caption>Balance sheets, US$ thousands</caption>
+        <thead><tr><th scope="col">US$ thousands</th><th scope="col">Dec 31, 2025</th><th scope="col">Jun 30, 2026</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Cash and cash equivalents</th><td class="num">47,872</td><td class="num">50,644</td></tr>
+            <tr><th scope="row">Short-term investments</th><td class="num">41,106</td><td class="num">40,674</td></tr>
+            <tr><th scope="row">Long-term investments</th><td class="num">20,160</td><td class="num">4,012</td></tr>
+            <tr><th scope="row">Accounts receivable, net</th><td class="num">216</td><td class="num">347</td></tr>
+            <tr><th scope="row">Inventories</th><td class="num">3,743</td><td class="num">3,384</td></tr>
+            <tr><th scope="row">Prepaid expenses and other current assets</th><td class="num">6,136</td><td class="num">1,776</td></tr>
+            <tr><th scope="row">Other assets</th><td class="num">361</td><td class="num">241</td></tr>
+            <tr class="tot"><th scope="row">Total assets</th><td class="num">119,594</td><td class="num">101,078</td></tr>
+            <tr><th scope="row">Accounts payable</th><td class="num">3,745</td><td class="num">7,510</td></tr>
+            <tr><th scope="row">Accrued and other current liabilities</th><td class="num">20,183</td><td class="num">23,112</td></tr>
+            <tr><th scope="row">Deferred revenue, current</th><td class="num">5,314</td><td class="num">5,418</td></tr>
+            <tr><th scope="row">Deferred revenue, non-current</th><td class="num">255</td><td class="num">2,620</td></tr>
+            <tr><th scope="row">Product development obligations (TEKES loans)</th><td class="num">19,560</td><td class="num dim">none</td></tr>
+            <tr><th scope="row">Liability related to sale of future revenues, non-current</th><td class="num">65,980</td><td class="num">70,495</td></tr>
+            <tr><th scope="row">Other long-term liabilities</th><td class="num">82</td><td class="num">67</td></tr>
+            <tr class="tot"><th scope="row">Total liabilities</th><td class="num">115,119</td><td class="num">109,222</td></tr>
+            <tr><th scope="row">Redeemable non-controlling interests</th><td class="num">21,480</td><td class="num">21,480</td></tr>
+            <tr class="tot"><th scope="row">Total deficit</th><td class="num">-17,005</td><td class="num">-29,624</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><span class="tg">Filed</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, balance sheet</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, balance sheet</a> The product development obligations were FibroGen Europe&rsquo;s TEKES loans, removed when the subsidiary was deconsolidated. The liability related to sale of future revenues is the royalty financing as it stood on June 30, before the August 31 amendment; including its current portion the total was $67.3 million at December 31, 2025 and $70.7 million at June 30, 2026.</p>
+    <div class="table-scroll reveal" style="margin-top:28px">
+      <table class="fin cfs">
+        <caption>Cash flows, consolidated, US$ thousands. These include the China business until August 29, 2025</caption>
+        <thead><tr><th scope="col">US$ thousands</th><th scope="col">FY2024</th><th scope="col">FY2025</th><th scope="col">H1 2025</th><th scope="col">H1 2026</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Net cash from (used in) operating activities</th><td class="num">-137,999</td><td class="num">-4,774</td><td class="num">15,401</td><td class="num">-17,878</td></tr>
+            <tr><th scope="row">Net cash from investing activities</th><td class="num">125,993</td><td class="num">35,419</td><td class="num">-29</td><td class="num">20,691</td></tr>
+            <tr><th scope="row">Net cash used in financing activities</th><td class="num">-255</td><td class="num">-86,028</td><td class="num">-97</td><td class="num">-12</td></tr>
+            <tr><th scope="row">Effect of exchange rates</th><td class="num">751</td><td class="num">1,077</td><td class="num">2,388</td><td class="num">-29</td></tr>
+            <tr class="tot"><th scope="row">Net change in cash and equivalents</th><td class="num">-11,510</td><td class="num">-54,306</td><td class="num">17,663</td><td class="num">2,772</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="liq reveal">
+      <h3>What the company says about funding</h3>
+      <ul>
+        <li>Cash, investments and accounts receivable were $95.7 million at June 30, 2026 against $109.4 million at December 31, 2025. On August 13 the company said that sum would fund operating plans into 2028. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-ex99_1.htm" target="_blank" rel="noopener">Aug 13 release</a></li>
+        <li>On August 31 it paid $42.6 million upfront under the amended royalty financing. The same release gives pro forma cash, investments and receivables of $53.1 million as of June 30 and says the cash runway is now expected into the fourth quarter of 2027, where on August 13 it had said into 2028. <span class="tg tg-co">Company figure</span> The company has reported no balance dated after June 30. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a></li>
+        <li>The 10-Q says the financial statements are prepared on a going-concern basis and that existing cash and cash equivalents are expected to cover planned operating requirements for at least the 12 months after the statements were issued. It also names two liquidity risks: indemnification obligations to current and former officers and directors, and the royalty financing as it stood before the amendment. It also says there can be no assurance that its cash resources will be sufficient to satisfy these obligations, that it may be required to seek additional financing, and that it anticipates needing substantial additional funding. The 10-Q was filed on August 13, before the payment. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 1 and MD&amp;A</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 OBLIGATIONS (gravest stock): listing, financing, the Fortis option, legal ============ -->
+<section id="obligations" class="sec-grave" aria-labelledby="obl-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Read before the headline</span>
+      <h2 id="obl-h">Listing, financing and <em>obligations</em></h2>
+      <p>What the filings say the company could lose or may have to pay, in the order a reader should check them. Dates and amounts are as filed; quotations are exact.</p>
+    </div>
+    <div class="exhibit reveal">
+      <div class="ex-id"><span class="ex-k" aria-hidden="true">A</span><div><h3>The Nasdaq listing</h3><p>Rule 5450(b), Global Select Market</p></div></div>
+      <div class="ex-body"><ol class="steps"><li><time>Apr 2, 2026</time><span>Nasdaq staff notify the company that it no longer meets the $50 million total assets and total revenue test of Rule 5450(b)(3)(A), because the China revenue is in discontinued operations in 2024 and 2025. The company also does not meet the stockholders&rsquo; equity or market value of listed securities alternatives.</span></li><li><time>May 18, 2026</time><span>Deadline to submit a plan to regain compliance; the company says it submitted one.</span></li><li><time>Sep 29, 2026</time><span>End of the compliance period.</span></li><li><time>Sep 30, 2026</time><span>Staff letter: compliance not demonstrated; staff determine to delist the common stock from the Global Select Market.</span></li><li><time>Next</time><span>A hearing has been requested and stays the suspension. The Panel could grant up to 180 days from the determination. The stock remains listed and trading as KYNB until it decides.</span></li></ol><blockquote>&ldquo;there can be no assurance that the Panel will grant the Company&rsquo;s request for continued listing or that the Company will be able to regain compliance with the applicable continued listing requirements within any extension period that may be granted by the Panel.&rdquo;<cite>8-K filed October 6, 2026</cite></blockquote><p>Total assets were $101.1 million at June 30, 2026 and 2025 revenue was $6.4 million. In April the company said it might consider applying to transfer to the Nasdaq Capital Market. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526415545/kynb-20260930.htm" target="_blank" rel="noopener">8-K, Oct 6</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526149624/kynb-20260402.htm" target="_blank" rel="noopener">8-K, Apr 9</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, risk factors</a></p></div>
+    </div>
+    <div class="exhibit reveal">
+      <div class="ex-id"><span class="ex-k" aria-hidden="true">B</span><div><h3>Royalty financing</h3><p>NQ Project Phoebus, L.P.</p></div></div>
+      <div class="ex-body"><div class="cmp-wrap"><table class="cmp"><caption>Royalty financing, before and after the August 31, 2026 amendment</caption><thead><tr><th scope="col">Term</th><th scope="col">Original, November 2022</th><th scope="col">Amended, August 31, 2026</th></tr></thead><tbody><tr><th scope="row">Payment cap</th><td>$100 million, $112.5 million or $125 million depending on when it is reached</td><td class="after">$65 million</td></tr><tr><th scope="row">Revenue share</th><td>22.5% of drug product revenue and 10% of Astellas milestones (20% from 2028)</td><td class="after">50% of EVRENZO revenue Kyntra Bio receives from Astellas outside Japan, until $15 million more is paid</td></tr><tr><th scope="row">Minimum payments</th><td>$62.5 million by March 1, 2029 and $125 million by March 1, 2031 if payments fell short</td><td class="after">all future true-up payments eliminated, the company says</td></tr><tr><th scope="row">Japan royalties</th><td>subject to the agreement</td><td class="after">released from the agreement, with their collateral</td></tr><tr><th scope="row">Paid so far</th><td>n/a</td><td class="after">$42.6 million upfront; $50 million paid to date in total, a full return of the $50 million invested</td></tr><tr><th scope="row">Carrying liability</th><td>$70.7 million at June 30, 2026 ($70.5 million of it non-current), at an effective rate of 15.16%</td><td class="after">not yet reported; the 10-Q for September 30 is the first</td></tr></tbody></table></div><p>The company says the amendment and the FibroGen Europe bankruptcy together reduced its future liabilities by approximately $80 million. <span class="tg tg-co">Company figure</span> Its release puts $60 million of that on the amendment, in exchange for the $42.6 million upfront payment. <span class="tg tg-co">Company figure</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-ex99_1.htm" target="_blank" rel="noopener">Release</a></p><p>This page reads the rest as the $19.2 million of TEKES loans that left the balance sheet with the bankruptcy. They were non-recourse to Kyntra Bio, and the 10-K says FibroGen Europe was not expected to have the funds to repay them in the foreseeable future. $60 million plus $19.2 million is $79.2 million. <span class="tg tg-cm">Computed</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 8</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, MD&amp;A</a></p><p>In the same release the company moved its stated cash runway from &ldquo;into 2028&rdquo; to &ldquo;into the fourth quarter of 2027&rdquo; and gave pro forma cash, investments and receivables of $53.1 million. <span class="tg tg-co">Company figure</span> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">8-K, Aug 31</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-ex99_1.htm" target="_blank" rel="noopener">Release</a></p></div>
+    </div>
+    <div class="exhibit reveal">
+      <div class="ex-id"><span class="ex-k" aria-hidden="true">C</span><div><h3>The Fortis option</h3><p>The license to FG-3246</p></div></div>
+      <div class="ex-body"><dl class="kv"><div><dt>Option</dt><dd>an exclusive option, signed in May 2023, to acquire Fortis Therapeutics, from which Kyntra Bio exclusively licenses FG-3246</dd></div><div><dt>If exercised</dt><dd>an option exercise payment of $80.0 million, then up to $200.0 million of contingent payments tied to regulatory approvals</dd></div><div><dt>Deadline</dt><dd>December 31, 2027, as amended on March 28, 2025</dd></div><div><dt>If not exercised</dt><dd>the exclusive license to FG-3246 expires</dd></div><div><dt>Upstream terms</dt><dd>if Kyntra Bio acquires Fortis it also owes UCSF development milestone fees and a single-digit royalty on net sales</dd></div><div><dt>On the balance sheet</dt><dd>Kyntra Bio consolidates Fortis. The $21.5 million of redeemable non-controlling interests is the roughly 98% of Fortis Series A preferred shares held by other investors, redeemable on events outside the company&rsquo;s control</dd></div></dl><p class="note"><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">10-K, note 5</a></p></div>
+    </div>
+    <div class="exhibit reveal">
+      <div class="ex-id"><span class="ex-k" aria-hidden="true">D</span><div><h3>Legal and indemnification</h3><p>An SEC proceeding against a former officer</p></div></div>
+      <div class="ex-body"><p>There is one SEC complaint against the company&rsquo;s former Chief Medical Officer in U.S. District Court. The company is not a party, but under its indemnification agreement it must advance certain legal expenses and may have to indemnify certain costs and judgments. Some judgments, settlements or fines sought by the SEC would not be covered. Accrued liabilities for these obligations were about $7.0 million at June 30, 2026, up from not material at December 31, 2025. The 10-Q says the costs of this proceeding are now material and that the company&rsquo;s insurance has exclusions and caps; the company says it cannot reasonably estimate costs beyond the accrual.</p><p>Separately, non-cancelable purchase obligations were $5.7 million for roxadustat manufacture and $1.0 million for general purchases. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, note 10</a></p></div>
+    </div>
+    <div class="exhibit reveal">
+      <div class="ex-id"><span class="ex-k" aria-hidden="true">E</span><div><h3>Risk factors, in its words</h3><p>From the 10-Q summary</p></div></div>
+      <div class="ex-body"><ul class="liq" style="max-width:none;margin:0"><li style="color:oklch(0.93 0.006 var(--Hn))">&ldquo;We are substantially dependent on the success of our lead products roxadustat and FG-3246 (in conjunction with our PET (as defined below) imaging agent FG-3180).&rdquo;</li><li style="color:oklch(0.93 0.006 var(--Hn))">&ldquo;Preclinical, Phase 1, and Phase 2 clinical trial results may not be indicative of the results that may be obtained in larger clinical trials.&rdquo;</li><li style="color:oklch(0.93 0.006 var(--Hn))">&ldquo;If our collaborations were terminated or if our partners were unwilling or unable to contribute or participate in the collaborations, our ability to successfully develop and commercialize the relevant product candidate could suffer.&rdquo;</li><li style="color:oklch(0.93 0.006 var(--Hn))">&ldquo;Certain components of our products are acquired from single-source suppliers or without long-term supply agreements. The loss of these suppliers, or their failure to supply, would materially and adversely affect our business.&rdquo;</li></ul><p class="note"><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">10-Q, Part II, Item 1A</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 PEOPLE (tint lattice): leadership, board, the one 5% holder ============ -->
+<section id="people" class="sec-tint" aria-labelledby="ppl-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Leadership and holders</span>
+      <h2 id="ppl-h">Who runs it, and who <em>holds it</em></h2>
+      <p>Names and titles are from the company&rsquo;s filings and website; the monogram tiles are not photographs. The website lists further senior leaders on its executive team page.</p>
+    </div>
+    <div class="people">
+<article class="person reveal"><span class="mono-tile" style="--c:var(--accent-2)" aria-hidden="true">TW</span><div><h3>Thane Wettig</h3><p>Chief Executive Officer and director. Joined as Chief Commercial Officer in June 2020; interim CEO July 2023; CEO October 2023.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-3)" aria-hidden="true">DD</span><div><h3>David DeLucia</h3><p>Senior Vice President and Chief Financial Officer. Joined May 2022; CFO since December 2024.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-5)" aria-hidden="true">JA</span><div><h3>John Alden</h3><p>General Counsel. Joined in 2009; General Counsel since December 2024.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-2)" aria-hidden="true">JS</span><div><h3>James A. Schoeneck</h3><p>Chairperson of the Board.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-3)" aria-hidden="true">MK</span><div><h3>Michael G. Kauffman, M.D., Ph.D.</h3><p>Director since June 2025, appointed by the Board; elected by stockholders on June 12, 2026 with 96.04% of the shares voting.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-5)" aria-hidden="true">JE</span><div><h3>Jeffrey L. Edwards</h3><p>Director.</p></div></article><article class="person reveal"><span class="mono-tile" style="--c:var(--accent-2)" aria-hidden="true">AS</span><div><h3>Andrew E. Singer</h3><p>Class III director, appointed October 1, 2026, and member of the Audit Committee.</p></div></article><article class="person left reveal"><span class="mono-tile" style="--c:var(--accent-3)" aria-hidden="true">MH</span><div><h3>Maykin Ho, Ph.D.</h3><p>Director since December 2018.</p><span class="tag-left">Resigned Sept 30, 2026</span></div></article>
+    </div>
+    <p class="note"><a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526409819/kynb-20260930.htm" target="_blank" rel="noopener">8-K, Oct 1</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526271449/kynb-20260612.htm" target="_blank" rel="noopener">8-K, Jun 16</a> <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526182044/kynb-20260427.htm" target="_blank" rel="noopener">Proxy, Apr 27</a> At the June 12, 2026 annual meeting stockholders also approved executive compensation on an advisory basis and ratified PricewaterhouseCoopers LLP as auditor.</p>
+    <h3 class="sub reveal">Beneficial ownership at March 31, 2026</h3>
+    <div class="table-scroll reveal">
+      <table class="fin own">
+        <caption>Beneficial ownership on 4,048,112 shares outstanding at March 31, 2026, from the proxy statement</caption>
+        <thead><tr><th scope="col">Holder</th><th scope="col">Shares</th><th scope="col">Percent</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Armistice Capital, LLC<small>Schedule 13G/A filed November 14, 2025 and stated as of December 31, 2025: shared voting and dispositive power</small></th><td class="num">378,000</td><td class="num">9.35%</td></tr>
+            <tr><th scope="row">Thane Wettig<small>chief executive; includes 46,318 shares issuable on options exercisable within 60 days</small></th><td class="num">67,468</td><td class="num">1.67%</td></tr>
+            <tr><th scope="row">James A. Schoeneck<small>chairperson; includes 39,666 held by a family trust and 12,410 on options</small></th><td class="num">52,076</td><td class="num">1.29%</td></tr>
+            <tr><th scope="row">David DeLucia<small>chief financial officer; includes 10,577 on options</small></th><td class="num">14,683</td><td class="num">under 1%</td></tr>
+            <tr><th scope="row">Christine L. Chung<small>former Senior Vice President, China Operations; no longer employed</small></th><td class="num">11,796</td><td class="num">under 1%</td></tr>
+            <tr><th scope="row">Jeffrey L. Edwards<small>director; includes 10,069 on options</small></th><td class="num">11,428</td><td class="num">under 1%</td></tr>
+            <tr><th scope="row">Maykin Ho, Ph.D.<small>director until September 30, 2026; includes 9,405 on options</small></th><td class="num">10,665</td><td class="num">under 1%</td></tr>
+            <tr><th scope="row">Michael Kauffman<small>director; all 4,300 on options</small></th><td class="num">4,300</td><td class="num">under 1%</td></tr>
+            <tr class="tot"><th scope="row">All executive officers and directors as a group (7 persons)<small>as the proxy states it</small></th><td class="num">168,116</td><td class="num">4.15%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Armistice Capital is the only holder of more than 5% the proxy names, from a Schedule 13G/A filed November 14, 2025 and stated as of December 31, 2025. Its stated 9.35% recomputes to 9.34% on the proxy&rsquo;s share base. <span class="tg tg-cm">Computed</span> The proxy&rsquo;s group row (168,116 shares, 88,779 of them on options) equals the six individuals listed other than Dr. Kauffman, and so counts Ms. Chung, a former officer; the proxy does not explain the difference. <a class="src-l" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526182044/kynb-20260427.htm" target="_blank" rel="noopener">Proxy, Apr 27</a></p>
+  </div>
+</section>
+
+<!-- ============ 09 RECORD (paper): every recent filing, linked to EDGAR ============ -->
+<section id="record" class="sec-white" aria-labelledby="rec-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The filed record</span>
+      <h2 id="rec-h">The <em>25 most recent</em> filings</h2>
+      <p>Kyntra Bio files annual reports on Form 10-K, quarterly reports on Form 10-Q and current reports on Form 8-K. Filings before January 7, 2026 were made as FibroGen, Inc. Each link goes to the filing on SEC EDGAR. Dates are EDGAR filing dates. The list is the 25 most recent, back to June 13, 2025.</p>
+    </div>
+    <div class="news">
+      <section class="news-year"><h3 class="news-yr">2026</h3><ul class="news-list">
+        <li class="news-item reveal" style="--d:0.00s"><time datetime="2026-10-06">Oct 6, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526415545/kynb-20260930.htm" target="_blank" rel="noopener">Nasdaq staff determination to delist; hearing requested, stock stays listed pending the Panel<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.02s"><time datetime="2026-10-01">Oct 1, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526409819/kynb-20260930.htm" target="_blank" rel="noopener">Board change: Andrew E. Singer appointed, Maykin Ho resigns; CEO severance agreement renewed<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.04s"><time datetime="2026-08-31">Aug 31, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526377059/kynb-20260831.htm" target="_blank" rel="noopener">Amended royalty financing: cap cut from $125M to $65M, $42.6M paid upfront, runway now into Q4 2027<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.06s"><time datetime="2026-08-13">Aug 13, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">Quarterly report on Form 10-Q, six months ended June 30, 2026<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">10-Q</span></li>
+        <li class="news-item reveal" style="--d:0.08s"><time datetime="2026-08-13">Aug 13, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349141/kynb-20260813.htm" target="_blank" rel="noopener">Second quarter 2026 results and business update<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.10s"><time datetime="2026-06-16">Jun 16, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526271449/kynb-20260612.htm" target="_blank" rel="noopener">Annual meeting results (June 12, 2026)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.12s"><time datetime="2026-06-09">Jun 9, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526264000/kynb-20260602.htm" target="_blank" rel="noopener">Final $4.0 million AstraZeneca holdback received<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.14s"><time datetime="2026-05-12">May 12, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526219374/kynb-20260331.htm" target="_blank" rel="noopener">Quarterly report on Form 10-Q, three months ended March 31, 2026<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">10-Q</span></li>
+        <li class="news-item reveal" style="--d:0.16s"><time datetime="2026-05-11">May 11, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526216731/kynb-20260511.htm" target="_blank" rel="noopener">First quarter 2026 results and business update<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.18s"><time datetime="2026-04-27">Apr 27, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526182044/kynb-20260427.htm" target="_blank" rel="noopener">Proxy statement for the 2026 annual meeting<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">DEF 14A</span></li>
+        <li class="news-item reveal" style="--d:0.20s"><time datetime="2026-04-09">Apr 9, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526149624/kynb-20260402.htm" target="_blank" rel="noopener">Nasdaq notice of non-compliance with Listing Rule 5450(b)(3)(A)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.22s"><time datetime="2026-03-16">Mar 16, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">Annual report on Form 10-K, fiscal 2025<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">10-K</span></li>
+        <li class="news-item reveal" style="--d:0.24s"><time datetime="2026-03-16">Mar 16, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108324/kynb-20260316.htm" target="_blank" rel="noopener">Fourth quarter and full year 2025 results and business update<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.26s"><time datetime="2026-01-07">Jan 7, 2026</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312526006327/fgen-20260107.htm" target="_blank" rel="noopener">Name change from FibroGen, Inc. to Kyntra Bio, Inc.; trading as KYNB from January 8<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+      </ul></section>
+      <section class="news-year"><h3 class="news-yr">2025</h3><ul class="news-list">
+        <li class="news-item reveal" style="--d:0.28s"><time datetime="2025-11-10">Nov 10, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312525274241/fgen-20250930.htm" target="_blank" rel="noopener">Quarterly report on Form 10-Q, nine months ended September 30, 2025 (as FibroGen)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">10-Q</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-11-10">Nov 10, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312525274192/fgen-20251110.htm" target="_blank" rel="noopener">FibroGen third quarter 2025 results and business update<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-11-06">Nov 6, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000119312525269529/fgen-20251106.htm" target="_blank" rel="noopener">First AstraZeneca holdback released: $6.0 million, paid as $6.4 million with a net-cash adjustment<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-09-05">Sep 5, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000092129925000007/fgen-20250829.htm" target="_blank" rel="noopener">Completion of the sale of FibroGen International to AstraZeneca (Item 2.01)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-09-02">Sep 2, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025112341/fgen-20250829.htm" target="_blank" rel="noopener">Sale of FibroGen China to AstraZeneca completed on August 29, 2025<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-08-18">Aug 18, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025109571/fgen-20250818.htm" target="_blank" rel="noopener">China regulatory approval of the sale of FibroGen China<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-08-14">Aug 14, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025108280/fgen-20250812.htm" target="_blank" rel="noopener">Fourth amendment to the term loan financing agreement (August 12, 2025)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-08-11">Aug 11, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025106549/fgen-20250630.htm" target="_blank" rel="noopener">Quarterly report on Form 10-Q, six months ended June 30, 2025 (as FibroGen)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">10-Q</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-08-11">Aug 11, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025106534/fgen-20250811.htm" target="_blank" rel="noopener">FibroGen second quarter 2025 results<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-07-14">Jul 14, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025095628/fgen-20250714.htm" target="_blank" rel="noopener">Third amendment to the term loan financing agreement (July 14, 2025)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+        <li class="news-item reveal" style="--d:0.30s"><time datetime="2025-06-13">Jun 13, 2025</time><a class="news-link" href="https://www.sec.gov/Archives/edgar/data/921299/000095017025086142/fgen-20250612.htm" target="_blank" rel="noopener">Termination, asset transfer and license agreement with HiFiBiO (June 12, 2025)<span class="arw" aria-hidden="true">&rarr;</span></a><span class="news-tag">8-K</span></li>
+      </ul></section>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 CONTACT IR (tint step): the generic IR address the company publishes, no invented rows ============ -->
+<section id="contact" class="sec-tint plain" aria-labelledby="con-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Investor relations</span>
+      <h2 id="con-h">Contact and <em>alerts</em></h2>
+      <p>This page is not the company&rsquo;s site and runs no email alerts of its own. The company&rsquo;s investor site carries its releases, filings and shareholder services.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-col"><h3>Investor relations</h3>
+        <a href="mailto:ir@kyntrabio.com">ir@kyntrabio.com</a>
+        <a href="https://investor.kyntrabio.com/" target="_blank" rel="noopener">investor.kyntrabio.com</a></div>
+      <div class="contact-col"><h3>Headquarters</h3>
+        <address>San Francisco, California (the 10-Q cover)</address></div>
+      <div class="contact-col"><h3>Filings</h3>
+        <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000921299&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" target="_blank" rel="noopener">SEC EDGAR, CIK 0000921299</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+<div class="foot-brand">
+  <span class="foot-glyph" aria-hidden="true"><i></i><i></i><i></i></span>
+  <p class="foot-name">Kyntra Bio, Inc.</p>
+</div>
+<ul class="footer-links">
+  <li><a href="https://investor.kyntrabio.com/" target="_blank" rel="noopener">Official investor relations</a></li>
+  <li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000921299&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" target="_blank" rel="noopener">SEC EDGAR filings, CIK 0000921299</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/921299/000119312526108346/kynb-20251231.htm" target="_blank" rel="noopener">Form 10-K, fiscal 2025</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/921299/000119312526349183/kynb-20260630.htm" target="_blank" rel="noopener">Form 10-Q, June 30, 2026</a></li>
+</ul>
+<p class="method">How this page was made: figures come from Kyntra Bio&rsquo;s Form 10-K for fiscal 2025 (filed March 16, 2026), its Form 10-Q for the quarter ended June 30, 2026 and its Forms 8-K through October 6, 2026, and are labelled filed, company figure, company statement, computed or as cited. Amounts are US dollars as filed. The company was named FibroGen, Inc. until January 7, 2026 and sold its China business in 2025; only continuing operations are shown, and revenue from before that sale is not comparable. Brand colours, the logo, the content of the pipeline chart and leadership names come from kyntrabio.com, observed October 12, 2026; the site&rsquo;s photographs of people are not reproduced.</p>
+    <p class="fls"><b>About this page:</b> This is an independent design concept and is not the official Kyntra Bio investor relations website. It is not affiliated with, endorsed by, or maintained by Kyntra Bio, Inc. Figures were assembled from public materials at a point in time and may be outdated; verify every figure against the company's official SEC filings. For official information, visit <a href="https://investor.kyntrabio.com/">investor.kyntrabio.com</a>.</p>
+    <p class="fls"><b>Forward-Looking Statements:</b> This website contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, including statements regarding the company's dependence on roxadustat and FG-3246; the results and timing of the FG-3246 Phase 2 trial and of a roxadustat Phase 3 trial in lower-risk MDS; whether its common stock stays listed on Nasdaq after the staff delisting determination of September 30, 2026; its royalty financing and its option to acquire Fortis Therapeutics; indemnification costs tied to an SEC proceeding against a former officer; its reliance on Astellas and on third-party manufacturers; and its need for additional capital. These statements involve known and unknown risks, uncertainties, and other factors that may cause actual results to differ materially from those expressed or implied. We undertake no obligation to update any forward-looking statements except as required by law. See the company's SEC filings, including its most recent 10-K and 10-Q, for a full discussion of risk factors.</p>
+    <p class="market-note">Market data, where shown, is delayed at least 15 minutes and provided for this concept only. Real-time quotes and official figures are available through the company's investor relations site and SEC filings. This concept page shows no live or delayed share quote and states no share price; the shares remain listed on the Nasdaq Global Select Market pending a Nasdaq Hearings Panel decision.</p>
+  </div>
+</footer>
+
+<script>
+/* mediaconsole motion: inlined by scaffold.mjs at the end of body, identical on every page; never edit it.
+   Sets html.js, runs the ONE reveal observer (fires the mc:reveal hook), scroll-spy, hamburger aria, and the
+   #hero-motif .paused toggle (off-screen, hidden tab, [data-motif-toggle]). Null-guarded: a failure reveals everything. */
+(function(){
+  var d=document,root=d.documentElement;
+  root.classList.add('js');
+  var reduce=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var hasIO='IntersectionObserver' in window;
+  function fire(el,name,detail){
+    var ev;
+    try{ev=new CustomEvent(name,{bubbles:true,detail:detail})}
+    catch(x){ev=d.createEvent('CustomEvent');ev.initCustomEvent(name,true,false,detail)}
+    el.dispatchEvent(ev);
+  }
+  /* mc:reveal fires ONCE per .reveal element, bubbling, as .in lands; detail.reduced is true under reduced motion.
+     Components hook here (counters.js) instead of adding a second observer. */
+  function show(el){
+    if(el.classList.contains('in'))return;
+    el.classList.add('in');
+    fire(el,'mc:reveal',{reduced:reduce});
+  }
+  try{
+    var els=[].slice.call(d.querySelectorAll('.reveal'));
+    if(reduce||!hasIO){els.forEach(show)}
+    else{
+      var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){io.unobserve(e.target);show(e.target)}})},{threshold:.12});
+      els.forEach(function(el){io.observe(el)});
+    }
+  }catch(err){root.classList.remove('js');[].forEach.call(d.querySelectorAll('.reveal'),function(el){el.classList.add('in')})}
+  try{
+    var burger=d.querySelector('.nav-burger'),links=d.getElementById('nav-links'),nav=d.querySelector('.site-nav');
+    if(burger&&links){
+      var setOpen=function(o){links.classList.toggle('open',o);burger.setAttribute('aria-expanded',o?'true':'false')};
+      burger.addEventListener('click',function(){setOpen(!links.classList.contains('open'))});
+      links.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))setOpen(false)});
+      d.addEventListener('keydown',function(e){if((e.key==='Escape'||e.key==='Esc')&&links.classList.contains('open')){setOpen(false);burger.focus()}});
+    }
+    if(nav){var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8)};window.addEventListener('scroll',onScroll,{passive:true});onScroll()}
+  }catch(err){}
+  try{
+    var na=[].slice.call(d.querySelectorAll('.nav-links a[href^="#"]:not(.btn)'));
+    if(na.length&&hasIO){
+      var so=new IntersectionObserver(function(en){en.forEach(function(e){
+        if(!e.isIntersecting)return;var id='#'+e.target.id;
+        na.forEach(function(a){var on=a.getAttribute('href')===id;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});
+      })},{rootMargin:'-40% 0px -55% 0px'});
+      na.forEach(function(a){var t=d.getElementById(a.getAttribute('href').slice(1));if(t)so.observe(t)});
+    }
+  }catch(err){}
+  /* hero motif pause: toggles .paused on #hero-motif (off-screen, hidden tab, or the user's [data-motif-toggle]).
+     The class is the whole contract: substrate CSS pauses every CSS animation inside it; JS motifs watch it (wave.js). */
+  try{
+    var motif=d.getElementById('hero-motif');
+    if(motif&&!reduce){
+      var hero=d.getElementById('hero')||motif,hv=true,user=false,tg=[].slice.call(d.querySelectorAll('[data-motif-toggle]'));
+      var sm=function(){var p=user||!hv||d.hidden;motif.classList.toggle('paused',p)};
+      if(hasIO)new IntersectionObserver(function(en){en.forEach(function(e){hv=e.isIntersecting});sm()},{threshold:0}).observe(hero);
+      d.addEventListener('visibilitychange',sm);
+      tg.forEach(function(b){
+        b.setAttribute('aria-pressed','false');
+        b.addEventListener('click',function(){user=!user;tg.forEach(function(t){t.setAttribute('aria-pressed',user?'true':'false')});sm()});
+      });
+    }
+  }catch(err){}
+})();
+</script>
+</body>
+</html>
